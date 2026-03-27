@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dev/WebstormProjects/**)",
+      "Bash(npx create-next-app@latest hanbit-corp-temp --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(npx create-next-app@latest hanbit-corp-temp --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --turbopack --yes)",
+      "Bash(rm -rf src tsconfig.json package.json)",
+      "Bash(cp -r /Users/dev/WebstormProjects/hanbit-corp-temp/. .)",
+      "Bash(npx:*)"
+    ]
+  }
+}
