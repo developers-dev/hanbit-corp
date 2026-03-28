@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className={`${sansKR.variable} antialiased`}>
+    <html className={`${sansKR.variable} antialiased`} suppressHydrationWarning>
       <body className="min-h-screen bg-white text-warm-800 font-sans">
         {children}
       </body>
