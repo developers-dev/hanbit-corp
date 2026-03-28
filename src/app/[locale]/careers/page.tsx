@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
+import { useTranslations } from "next-intl"
 import { ArrowRight, Loader2 } from "lucide-react"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
@@ -9,78 +10,29 @@ import JobApplicationModal from "../components/job-application-modal"
 import { submitJobApplication } from "../actions/career-actions"
 import PhoneInput from "../components/phone-input"
 
+const POSITION_KEYS = ["seniorFrontend", "backendEngineer", "aiMlEngineer", "devopsEngineer"] as const
+const WHY_HANBIT_KEYS = ["workLifeBalance", "growth", "teamwork", "benefits"] as const
+
 export default function CareersPage() {
   const [selectedPosition, setSelectedPosition] = useState<string | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null)
 
-  const positions = [
-    {
-      title: "Senior Frontend Developer",
-      department: "개발팀",
-      type: "정규직",
-      location: "서울 강남구",
-      salary: "6,000만 ~ 8,000만원",
-      description: "React/Next.js 기반의 프론트엔드 개발을 담당하며, 사용자 경험을 최우선으로 하는 개발자를 찾습니다.",
-      requirements: [
-        "React/Next.js 3년 이상 경험",
-        "TypeScript 능숙",
-        "반응형 웹 개발 경험",
-        "Git 협업 경험",
-        "UI/UX에 대한 이해",
-      ],
-      benefits: ["유연근무제", "재택근무", "교육비 지원", "건강검진", "팀 워크샵"],
-    },
-    {
-      title: "Backend Engineer",
-      department: "개발팀",
-      type: "정규직",
-      location: "서울 강남구",
-      salary: "5,500만 ~ 7,500만원",
-      description: "확장 가능한 백엔드 시스템을 설계하고 구현하는 엔지니어를 모집합니다.",
-      requirements: [
-        "Node.js 또는 Python 3년 이상",
-        "데이터베이스 설계 경험",
-        "RESTful API 개발",
-        "클라우드 서비스 경험",
-        "마이크로서비스 아키텍처 이해",
-      ],
-      benefits: ["성과급", "스톡옵션", "컨퍼런스 참가비", "도서구입비", "점심 제공"],
-    },
-    {
-      title: "AI/ML Engineer",
-      department: "AI팀",
-      type: "정규직",
-      location: "서울 강남구",
-      salary: "7,000만 ~ 9,000만원",
-      description: "머신러닝 모델 개발과 LLM 파인튜닝을 담당할 AI 엔지니어를 찾습니다.",
-      requirements: [
-        "Python, TensorFlow/PyTorch 경험",
-        "머신러닝 프로젝트 경험",
-        "데이터 전처리 및 분석",
-        "LLM 파인튜닝 경험 우대",
-        "논문 작성 경험 우대",
-      ],
-      benefits: ["연구개발비", "논문 발표 지원", "GPU 서버 제공", "학회 참석비", "특허 보상금"],
-    },
-    {
-      title: "DevOps Engineer",
-      department: "인프라팀",
-      type: "정규직",
-      location: "서울 강남구",
-      salary: "6,500만 ~ 8,500만원",
-      description: "클라우드 인프라 구축과 CI/CD 파이프라인 관리를 담당합니다.",
-      requirements: [
-        "AWS/GCP/Azure 경험",
-        "Docker/Kubernetes 운영",
-        "CI/CD 파이프라인 구축",
-        "모니터링 시스템 구축",
-        "Infrastructure as Code",
-      ],
-      benefits: ["클라우드 자격증 지원", "온콜 수당", "장비 지원", "교육 과정", "인센티브"],
-    },
-  ]
+  const t = useTranslations("Careers")
+  const tCommon = useTranslations("Common")
+
+  const positions = POSITION_KEYS.map((key) => ({
+    key,
+    title: t(`positions.items.${key}.title`),
+    department: t(`positions.items.${key}.department`),
+    type: t(`positions.items.${key}.type`),
+    location: t(`positions.items.${key}.location`),
+    salary: t(`positions.items.${key}.salary`),
+    description: t(`positions.items.${key}.description`),
+    requirements: t.raw(`positions.items.${key}.requirements`) as string[],
+    benefits: t.raw(`positions.items.${key}.benefits`) as string[],
+  }))
 
   const handleJobApplication = (positionTitle: string) => {
     setSelectedPosition(positionTitle)
@@ -95,7 +47,7 @@ export default function CareersPage() {
     const formData = new FormData(e.currentTarget)
 
     if (!formData.get("name") || !formData.get("email") || !formData.get("phone") || !formData.get("position") || !formData.get("introduction")) {
-      setMessage({ type: "error", text: "필수 항목을 모두 입력해주세요." })
+      setMessage({ type: "error", text: tCommon("required") })
       setIsSubmitting(false)
       return
     }
@@ -108,7 +60,7 @@ export default function CareersPage() {
         form.reset()
       }
     } catch {
-      setMessage({ type: "error", text: "전송 중 오류가 발생했습니다. 다시 시도해주세요." })
+      setMessage({ type: "error", text: tCommon("errorGeneric") })
     } finally {
       setIsSubmitting(false)
     }
@@ -123,18 +75,16 @@ export default function CareersPage() {
         <div className="max-w-[1120px] mx-auto">
           <div className="max-w-[640px]">
             <p className="text-sm font-medium tracking-widest uppercase mb-6 text-copper">
-              Careers
+              {t("hero.sectionLabel")}
             </p>
             <h1
               className="text-[clamp(2.5rem,5vw,4rem)] mb-8 font-serif text-navy font-bold leading-[1.15]"
             >
-              함께 성장할
-              <br />
-              동료를 찾습니다
+              {t.rich("hero.title", { br: () => <br /> })}
             </h1>
             <div className="w-12 h-0.5 bg-copper mb-8" />
             <p className="text-lg leading-relaxed text-warm-600">
-              완벽한 코드와 혁신적인 솔루션을 만들어가는 HANBIT에서 함께 도전할 개발자를 기다립니다.
+              {t("hero.description")}
             </p>
           </div>
         </div>
@@ -144,20 +94,15 @@ export default function CareersPage() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[1120px] mx-auto">
           <div className="grid md:grid-cols-4 gap-10">
-            {[
-              { title: "워라밸", desc: "유연근무제와 재택근무로 일과 삶의 균형" },
-              { title: "성장 지원", desc: "교육비, 컨퍼런스, 도서구입비 지원" },
-              { title: "팀워크", desc: "수평적 문화와 열린 소통" },
-              { title: "복리후생", desc: "경쟁력 있는 연봉과 다양한 복지" },
-            ].map((item, i) => (
-              <div key={item.title}>
+            {WHY_HANBIT_KEYS.map((key, i) => (
+              <div key={key}>
                 <span
                   className="text-3xl font-bold block mb-3 font-serif text-warm-300"
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="text-lg font-semibold mb-2 text-navy">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-warm-600">{item.desc}</p>
+                <h3 className="text-lg font-semibold mb-2 text-navy">{t(`whyHanbit.items.${key}.title`)}</h3>
+                <p className="text-sm leading-relaxed text-warm-600">{t(`whyHanbit.items.${key}.desc`)}</p>
               </div>
             ))}
           </div>
@@ -169,19 +114,19 @@ export default function CareersPage() {
         <div className="max-w-[1120px] mx-auto">
           <div className="mb-14">
             <p className="text-sm font-medium tracking-widest uppercase mb-4 text-copper">
-              Open Positions
+              {t("positions.sectionLabel")}
             </p>
             <h2
               className="text-[clamp(2rem,3.5vw,2.75rem)] font-serif text-navy font-bold"
             >
-              채용 포지션
+              {t("positions.title")}
             </h2>
           </div>
 
           <div className="space-y-0">
             {positions.map((position, index) => (
               <div
-                key={position.title}
+                key={position.key}
                 className="py-10 border-b border-warm-border"
               >
                 <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8">
@@ -222,7 +167,7 @@ export default function CareersPage() {
                       onClick={() => handleJobApplication(position.title)}
                       className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-warm-50 px-8 py-3.5 rounded-lg font-medium text-sm transition-colors duration-200"
                     >
-                      지원하기
+                      {t("positions.applyButton")}
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -238,14 +183,14 @@ export default function CareersPage() {
         <div className="max-w-[720px] mx-auto">
           <div className="mb-10">
             <p className="text-sm font-medium tracking-widest uppercase mb-4 text-copper">
-              Apply
+              {t("applicationForm.sectionLabel")}
             </p>
             <h2
               className="text-[clamp(2rem,3.5vw,2.5rem)] mb-4 font-serif text-navy font-bold"
             >
-              지원서 작성
+              {t("applicationForm.title")}
             </h2>
-            <p className="text-warm-600 leading-relaxed">간단한 정보를 입력하시면 빠르게 연락드리겠습니다.</p>
+            <p className="text-warm-600 leading-relaxed">{t("applicationForm.description")}</p>
           </div>
 
           {message && (
@@ -265,25 +210,25 @@ export default function CareersPage() {
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <label className="block text-sm font-medium mb-2 text-warm-800">
-                  이름 *
+                  {t("applicationForm.labels.name")}
                 </label>
                 <input
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-lg text-[15px] outline-none transition-colors bg-warm-50 border-[1.5px] border-warm-300 text-warm-800 focus:border-navy"
-                  placeholder="성함을 입력해주세요"
+                  placeholder={t("applicationForm.placeholders.name")}
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-warm-800">
-                  이메일 *
+                  {t("applicationForm.labels.email")}
                 </label>
                 <input
                   name="email"
                   type="email"
                   required
                   className="w-full px-4 py-3 rounded-lg text-[15px] outline-none transition-colors bg-warm-50 border-[1.5px] border-warm-300 text-warm-800 focus:border-navy"
-                  placeholder="이메일을 입력해주세요"
+                  placeholder={t("applicationForm.placeholders.email")}
                 />
               </div>
             </div>
@@ -291,22 +236,22 @@ export default function CareersPage() {
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <label className="block text-sm font-medium mb-2 text-warm-800">
-                  연락처 *
+                  {t("applicationForm.labels.phone")}
                 </label>
                 <PhoneInput name="phone" required />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-warm-800">
-                  지원 포지션 *
+                  {t("applicationForm.labels.position")}
                 </label>
                 <select
                   name="position"
                   required
                   className="w-full px-4 py-3 rounded-lg text-[15px] outline-none transition-colors bg-warm-50 border-[1.5px] border-warm-300 text-warm-800 focus:border-navy"
                 >
-                  <option value="">포지션을 선택해주세요</option>
+                  <option value="">{t("applicationForm.placeholders.positionSelect")}</option>
                   {positions.map((p) => (
-                    <option key={p.title} value={p.title}>{p.title}</option>
+                    <option key={p.key} value={p.title}>{p.title}</option>
                   ))}
                 </select>
               </div>
@@ -314,25 +259,25 @@ export default function CareersPage() {
 
             <div>
               <label className="block text-sm font-medium mb-2 text-warm-800">
-                자기소개 *
+                {t("applicationForm.labels.introduction")}
               </label>
               <textarea
                 name="introduction"
                 required
                 rows={5}
                 className="w-full px-4 py-3 rounded-lg text-[15px] outline-none transition-colors resize-none bg-warm-50 border-[1.5px] border-warm-300 text-warm-800 focus:border-navy"
-                placeholder="간단한 자기소개와 지원 동기를 작성해주세요"
+                placeholder={t("applicationForm.placeholders.introduction")}
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium mb-2 text-warm-800">
-                포트폴리오 URL
+                {t("applicationForm.labels.portfolio")}
               </label>
               <input
                 name="portfolio"
                 className="w-full px-4 py-3 rounded-lg text-[15px] outline-none transition-colors bg-warm-50 border-[1.5px] border-warm-300 text-warm-800 focus:border-navy"
-                placeholder="GitHub, 개인 사이트 등의 URL"
+                placeholder={t("applicationForm.placeholders.portfolio")}
               />
             </div>
 
@@ -340,11 +285,11 @@ export default function CareersPage() {
               {isSubmitting ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
-                  제출 중...
+                  {t("applicationForm.submitting")}
                 </>
               ) : (
                 <>
-                  지원서 제출하기
+                  {t("applicationForm.submitButton")}
                   <ArrowRight className="w-4 h-4" />
                 </>
               )}

@@ -55,8 +55,8 @@ const countries = [
   { code: "UA", dial: "+380", name: "Україна", pattern: /^0\d{9}$/, placeholder: "067 123 4567" },
 ]
 
-export default function PhoneInput({ name = "phone", required = false }: { name?: string; required?: boolean }) {
-  const [country, setCountry] = useState("KR")
+export default function PhoneInput({ name = "phone", required = false, defaultCountry = "KR" }: { name?: string; required?: boolean; defaultCountry?: string }) {
+  const [country, setCountry] = useState(defaultCountry)
   const [phone, setPhone] = useState("")
   const [error, setError] = useState("")
 
@@ -68,7 +68,7 @@ export default function PhoneInput({ name = "phone", required = false }: { name?
       return
     }
     if (!selected.pattern.test(value)) {
-      setError(`${selected.name} 형식에 맞지 않습니다 (예: ${selected.placeholder})`)
+      setError(`Invalid format for ${selected.name} (e.g. ${selected.placeholder})`)
     } else {
       setError("")
     }

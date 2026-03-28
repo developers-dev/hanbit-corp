@@ -1,11 +1,11 @@
 {
   "Nav": {
-    "brand": "HANBIT",
     "services": "Services",
     "portfolio": "Case Studies",
     "about": "About",
     "careers": "Careers",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "brand": "HANBIT"
   },
   "Footer": {
     "brand": "HANBIT",
@@ -223,53 +223,49 @@
     "team": {
       "sectionLabel": "Team",
       "title": "Our Team",
-      "members": [
-        {
+      "members": {
+        "kimTaeHyun": {
           "name": "Taehyun Kim",
           "role": "CEO & Lead Developer",
-          "description": "A full-stack developer with 10 years of experience and a philosophy of writing perfect code.",
-          "skills": ["React", "Node.js", "System Architecture"]
+          "description": "A full-stack developer with 10 years of experience and a philosophy of writing perfect code."
         },
-        {
+        "leeSuJin": {
           "name": "Sujin Lee",
           "role": "AI/ML Engineer",
-          "description": "A data science and machine learning specialist who delivers actionable business insights.",
-          "skills": ["Python", "TensorFlow", "Data Analysis"]
+          "description": "A data science and machine learning specialist who delivers actionable business insights."
         },
-        {
+        "parkMinSu": {
           "name": "Minsu Park",
           "role": "Frontend Specialist",
-          "description": "A frontend expert focused on crafting exceptional user experiences.",
-          "skills": ["React", "TypeScript", "UI/UX"]
+          "description": "A frontend expert focused on crafting exceptional user experiences."
         },
-        {
+        "jungHaYoung": {
           "name": "Hayoung Jung",
           "role": "Backend Engineer",
-          "description": "A specialist in designing scalable backend systems.",
-          "skills": ["Node.js", "Database", "Cloud"]
+          "description": "A specialist in designing scalable backend systems."
         }
-      ]
+      }
     },
     "timeline": {
       "sectionLabel": "History",
       "title": "Our Journey",
-      "events": [
-        { "year": "2019", "event": "HANBIT Founded", "description": "Launched as a development studio committed to engineering excellence" },
-        { "year": "2020", "event": "First AI Project", "description": "Successfully developed an ML-based recommendation system" },
-        { "year": "2021", "event": "Team Expansion", "description": "Grew to a team of 4 specialized developers" },
-        { "year": "2022", "event": "Enterprise Partnerships", "description": "Secured long-term contracts with major corporations" },
-        { "year": "2023", "event": "Technology Innovation", "description": "Launched LLM fine-tuning services" },
-        { "year": "2024", "event": "Global Expansion", "description": "Began serving international clients" }
-      ]
+      "items": {
+        "2019": { "event": "HANBIT Founded", "description": "Launched as a development studio committed to engineering excellence" },
+        "2020": { "event": "First AI Project", "description": "Successfully developed an ML-based recommendation system" },
+        "2021": { "event": "Team Expansion", "description": "Grew to a team of 4 specialized developers" },
+        "2022": { "event": "Enterprise Partnerships", "description": "Secured long-term contracts with major corporations" },
+        "2023": { "event": "Technology Innovation", "description": "Launched LLM fine-tuning services" },
+        "2024": { "event": "Global Expansion", "description": "Began serving international clients" }
+      }
     },
     "values": {
       "sectionLabel": "Values",
       "title": "Core Values",
-      "items": [
-        { "title": "Excellence", "desc": "We pursue the highest quality in every project we undertake" },
-        { "title": "Collaboration", "desc": "We achieve outstanding results through teamwork and open communication" },
-        { "title": "Innovation", "desc": "We create new value through relentless innovation" }
-      ]
+      "items": {
+        "excellence": { "title": "Excellence", "desc": "We pursue the highest quality in every project we undertake" },
+        "collaboration": { "title": "Collaboration", "desc": "We achieve outstanding results through teamwork and open communication" },
+        "innovation": { "title": "Innovation", "desc": "We create new value through relentless innovation" }
+      }
     },
     "cta": {
       "title": "Let's Build the Future Together",
@@ -284,8 +280,8 @@
       "title": "Our Services",
       "description": "We deliver differentiated development solutions that drive business success through precision engineering and uncompromising quality."
     },
-    "services": [
-      {
+    "items": {
+      "aiData": {
         "title": "AI & Data Solutions",
         "subtitle": "Intelligent Data Analytics & AI Solutions",
         "description": "We provide business insights and automated decision-making through machine learning, data science, and LLM fine-tuning.",
@@ -297,10 +293,9 @@
           "LLM Fine-tuning & Optimization",
           "Predictive Analytics & Recommendation Systems"
         ],
-        "technologies": ["Python", "TensorFlow", "PyTorch", "Pandas", "Apache Spark", "MLflow"],
-        "price": "Custom quote per project"
+        "price": "Custom quote"
       },
-      {
+      "webDev": {
         "title": "Web Development",
         "subtitle": "Scalable Web Application Development",
         "description": "We build web applications that deliver both performance and exceptional user experience using modern technology stacks.",
@@ -312,10 +307,9 @@
           "Performance Optimization & SEO",
           "Real-time Feature Implementation"
         ],
-        "technologies": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Redis"],
-        "price": "Starting at $2,500/mo"
+        "price": "From $2,500/mo"
       },
-      {
+      "systemArch": {
         "title": "System Architecture",
         "subtitle": "Robust & Scalable System Design",
         "description": "We design reliable and scalable systems through cloud-native architecture and microservices.",
@@ -327,10 +321,9 @@
           "Monitoring & Logging Systems",
           "Security & Performance Optimization"
         ],
-        "technologies": ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"],
-        "price": "$125/hr consulting"
+        "price": "$125/hr"
       },
-      {
+      "customPlatforms": {
         "title": "Custom Platforms",
         "subtitle": "Bespoke Platform & Solution Development",
         "description": "We develop custom platforms and integrated solutions perfectly aligned with your business requirements.",
@@ -342,22 +335,21 @@
           "Legacy System Modernization",
           "Custom Business Logic"
         ],
-        "technologies": ["React Native", "Flutter", "GraphQL", "Microservices", "REST API", "WebSocket"],
-        "price": "Custom quote per project"
+        "price": "Custom quote"
       }
-    ],
+    },
+    "featuresLabel": "Key Features",
     "taxNote": "excl. tax",
     "consultButton": "Request a Consultation",
-    "featuresLabel": "Key Features",
     "process": {
       "sectionLabel": "Process",
       "title": "Development Process",
-      "steps": [
-        { "step": "01", "title": "Requirements Analysis", "desc": "We precisely analyze your business goals and technical requirements" },
-        { "step": "02", "title": "Design & Planning", "desc": "We define the optimal architecture and development roadmap" },
-        { "step": "03", "title": "Development & Implementation", "desc": "We execute phased development using agile methodologies" },
-        { "step": "04", "title": "Testing & Deployment", "desc": "We perform thorough testing and ensure stable deployment" }
-      ]
+      "steps": {
+        "01": { "title": "Requirements Analysis", "desc": "We precisely analyze your business goals and technical requirements" },
+        "02": { "title": "Design & Planning", "desc": "We define the optimal architecture and development roadmap" },
+        "03": { "title": "Development & Implementation", "desc": "We execute phased development using agile methodologies" },
+        "04": { "title": "Testing & Deployment", "desc": "We perform thorough testing and ensure stable deployment" }
+      }
     },
     "cta": {
       "title": "Start Your Project",
@@ -372,9 +364,8 @@
       "title": "Our Work",
       "description": "Explore our diverse portfolio of completed projects and see HANBIT's technical expertise in action."
     },
-    "projects": [
-      {
-        "id": 1,
+    "projects": {
+      "aiRecommendation": {
         "title": "AI Recommendation System",
         "category": "AI/ML",
         "client": "E-Commerce Platform",
@@ -389,8 +380,7 @@
           "accuracy": "85% recommendation accuracy"
         }
       },
-      {
-        "id": 2,
+      "fintechDashboard": {
         "title": "Fintech Dashboard",
         "category": "Web Development",
         "client": "Financial Startup",
@@ -401,12 +391,11 @@
         "results": ["Real-time data processing", "99.9% availability", "95% user satisfaction"],
         "metrics": {
           "users": "10,000+ DAU",
-          "transactions": "KRW 100M+ daily volume",
+          "transactions": "$100K+ daily volume",
           "uptime": "99.9% uptime"
         }
       },
-      {
-        "id": 3,
+      "cloudMigration": {
         "title": "Cloud Migration",
         "category": "System Architecture",
         "client": "Manufacturing Enterprise",
@@ -421,8 +410,7 @@
           "reliability": "99.99% availability"
         }
       },
-      {
-        "id": 4,
+      "mobileCommerce": {
         "title": "Mobile Commerce App",
         "category": "Mobile",
         "client": "Fashion Brand",
@@ -437,8 +425,7 @@
           "retention": "75% monthly retention"
         }
       },
-      {
-        "id": 5,
+      "dataAnalytics": {
         "title": "Data Analytics Platform",
         "category": "Data Engineering",
         "client": "Marketing Agency",
@@ -453,8 +440,7 @@
           "accuracy": "92% prediction accuracy"
         }
       },
-      {
-        "id": 6,
+      "llmChatbot": {
         "title": "Enterprise LLM Chatbot",
         "category": "AI/LLM",
         "client": "Enterprise HQ",
@@ -469,15 +455,17 @@
           "response": "2.3s response time"
         }
       }
-    ],
-    "techStackLabel": "Tech Stack",
-    "liveDemoButton": "View Live Demo",
-    "stats": [
-      { "value": "50+", "label": "Projects Completed" },
-      { "value": "100%", "label": "Client Satisfaction" },
-      { "value": "99.9%", "label": "System Reliability" },
-      { "value": "24/7", "label": "Technical Support" }
-    ],
+    },
+    "modal": {
+      "techStackLabel": "Tech Stack",
+      "liveDemo": "View Live Demo"
+    },
+    "stats": {
+      "completedProjects": { "value": "50+", "label": "Projects Completed" },
+      "satisfaction": { "value": "100%", "label": "Client Satisfaction" },
+      "stability": { "value": "99.9%", "label": "System Reliability" },
+      "support": { "value": "24/7", "label": "Technical Support" }
+    },
     "cta": {
       "title": "Your Project Could Be Next",
       "description": "Let HANBIT's expertise and experience drive your business to success.",
@@ -490,17 +478,20 @@
       "title": "Join Us and\nGrow Together",
       "description": "We're looking for talented developers ready to take on new challenges with HANBIT, where we craft flawless code and innovative solutions."
     },
-    "whyHanbit": [
-      { "title": "Work-Life Balance", "desc": "Flexible hours and remote work options" },
-      { "title": "Growth Support", "desc": "Education, conference, and book allowances" },
-      { "title": "Teamwork", "desc": "Flat hierarchy and open communication" },
-      { "title": "Compensation", "desc": "Competitive salary and comprehensive benefits" }
-    ],
+    "whyHanbit": {
+      "items": {
+        "workLifeBalance": { "title": "Work-Life Balance", "desc": "Flexible hours and remote work options" },
+        "growth": { "title": "Growth Support", "desc": "Education, conference, and book allowances" },
+        "teamwork": { "title": "Teamwork", "desc": "Flat hierarchy and open communication" },
+        "benefits": { "title": "Compensation", "desc": "Competitive salary and comprehensive benefits" }
+      }
+    },
     "positions": {
       "sectionLabel": "Open Positions",
       "title": "Open Positions",
-      "items": [
-        {
+      "applyButton": "Apply Now",
+      "items": {
+        "seniorFrontend": {
           "title": "Senior Frontend Developer",
           "department": "Engineering",
           "type": "Full-time",
@@ -516,7 +507,7 @@
           ],
           "benefits": ["Flexible hours", "Remote work", "Education budget", "Health checkups", "Team retreats"]
         },
-        {
+        "backendEngineer": {
           "title": "Backend Engineer",
           "department": "Engineering",
           "type": "Full-time",
@@ -532,7 +523,7 @@
           ],
           "benefits": ["Performance bonus", "Stock options", "Conference sponsorship", "Book allowance", "Lunch provided"]
         },
-        {
+        "aiMlEngineer": {
           "title": "AI/ML Engineer",
           "department": "AI Team",
           "type": "Full-time",
@@ -548,7 +539,7 @@
           ],
           "benefits": ["R&D budget", "Publication support", "GPU server access", "Conference attendance", "Patent bonuses"]
         },
-        {
+        "devopsEngineer": {
           "title": "DevOps Engineer",
           "department": "Infrastructure",
           "type": "Full-time",
@@ -564,42 +555,49 @@
           ],
           "benefits": ["Cloud certification support", "On-call compensation", "Equipment allowance", "Training programs", "Incentive pay"]
         }
-      ]
+      }
     },
-    "applyButton": "Apply Now",
     "applicationForm": {
       "sectionLabel": "Apply",
       "title": "Submit Your Application",
       "description": "Fill out your details and we'll get back to you promptly.",
-      "nameLabel": "Name *",
-      "namePlaceholder": "Your full name",
-      "emailLabel": "Email *",
-      "emailPlaceholder": "Your email address",
-      "phoneLabel": "Phone *",
-      "positionLabel": "Position *",
-      "positionPlaceholder": "Select a position",
-      "introductionLabel": "About You *",
-      "introductionPlaceholder": "Tell us about yourself and why you'd like to join HANBIT",
-      "portfolioLabel": "Portfolio URL",
-      "portfolioPlaceholder": "GitHub, personal website, or other URL",
-      "submitButton": "Submit Application"
+      "labels": {
+        "name": "Name *",
+        "email": "Email *",
+        "phone": "Phone *",
+        "position": "Position *",
+        "introduction": "About You *",
+        "portfolio": "Portfolio URL"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "Your email address",
+        "positionSelect": "Select a position",
+        "introduction": "Tell us about yourself and why you'd like to join HANBIT",
+        "portfolio": "GitHub, personal website, or other URL"
+      },
+      "submitButton": "Submit Application",
+      "submitting": "Submitting..."
     },
     "modal": {
       "applyFor": "Apply for {position}",
-      "nameLabel": "Name *",
-      "namePlaceholder": "Your full name",
-      "emailLabel": "Email *",
-      "emailPlaceholder": "Your email address",
-      "phoneLabel": "Phone *",
-      "phonePlaceholder": "Your phone number",
-      "introductionLabel": "About You *",
-      "introductionPlaceholder": "Tell us about yourself and why you'd like to join...",
-      "portfolioLabel": "Portfolio URL",
-      "portfolioPlaceholder": "GitHub, personal website, or other URL",
-      "cancelButton": "Cancel",
-      "submitButton": "Submit Application",
-      "successMessage": "Your application has been submitted successfully. We'll be in touch soon.",
-      "requiredFieldsError": "Please fill in all required fields."
+      "labels": {
+        "name": "Name *",
+        "email": "Email *",
+        "phone": "Phone *",
+        "introduction": "About You *",
+        "portfolio": "Portfolio URL"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "Your email address",
+        "phone": "Your phone number",
+        "introduction": "Tell us about yourself and why you'd like to join...",
+        "portfolio": "GitHub, personal website, or other URL"
+      },
+      "cancel": "Cancel",
+      "submit": "Submit Application",
+      "submitting": "Submitting..."
     }
   },
   "Contact": {
@@ -608,22 +606,30 @@
       "title": "Project Consultation",
       "description": "Let's take the first step toward building the perfect solution together."
     },
-    "info": [
-      { "label": "Email", "value": "hello@hanbit.dev", "sub": "Response within 24 hours" },
-      { "label": "Phone", "value": "+82 2-1234-5678", "sub": "Mon-Fri 09:00-18:00" },
-      { "label": "Address", "value": "123 Teheran-ro, Gangnam-gu, Seoul", "sub": "HANBIT Building, 10F" },
-      { "label": "Business Hours", "value": "Mon-Fri 09:00 - 18:00", "sub": "Saturday by appointment" }
-    ],
+    "info": {
+      "email": { "label": "Email", "value": "hello@hanbit.dev", "sub": "Response within 24 hours" },
+      "phone": { "label": "Phone", "value": "+82 2-1234-5678", "sub": "Mon-Fri 09:00-18:00" },
+      "address": { "label": "Address", "value": "123 Teheran-ro, Gangnam-gu, Seoul", "sub": "HANBIT Building, 10F" },
+      "hours": { "label": "Business Hours", "value": "Mon-Fri 09:00 - 18:00", "sub": "Saturday by appointment" }
+    },
     "form": {
       "title": "Request a Free Consultation",
-      "companyLabel": "Company",
-      "companyPlaceholder": "Company name",
-      "nameLabel": "Contact Name *",
-      "namePlaceholder": "Your name",
-      "emailLabel": "Email *",
-      "emailPlaceholder": "Email address",
-      "phoneLabel": "Phone *",
-      "servicesLabel": "Services of Interest",
+      "labels": {
+        "company": "Company",
+        "name": "Contact Name *",
+        "email": "Email *",
+        "phone": "Phone *",
+        "services": "Services of Interest",
+        "budget": "Budget Range",
+        "startDate": "Preferred Start Date",
+        "description": "Project Description *"
+      },
+      "placeholders": {
+        "company": "Company name",
+        "name": "Your name",
+        "email": "Email address",
+        "description": "Tell us about your project"
+      },
       "serviceOptions": [
         "AI & Data Solutions",
         "Web Development",
@@ -632,28 +638,25 @@
         "Mobile Development",
         "Consulting"
       ],
-      "budgetLabel": "Budget Range",
-      "budgetPlaceholder": "Select a range",
-      "budgetOptions": [
-        { "value": "Under $10,000", "label": "Under $10,000" },
-        { "value": "$10,000 - $30,000", "label": "$10,000 - $30,000" },
-        { "value": "$30,000 - $50,000", "label": "$30,000 - $50,000" },
-        { "value": "$50,000 - $100,000", "label": "$50,000 - $100,000" },
-        { "value": "Over $100,000", "label": "Over $100,000" }
-      ],
-      "startDateLabel": "Preferred Start Date",
-      "descriptionLabel": "Project Description *",
-      "descriptionPlaceholder": "Tell us about your project",
-      "submitButton": "Submit Inquiry"
+      "budgetOptions": {
+        "placeholder": "Select a range",
+        "under10m": "Under $10,000",
+        "10mTo30m": "$10,000 - $30,000",
+        "30mTo50m": "$30,000 - $50,000",
+        "50mTo100m": "$50,000 - $100,000",
+        "over100m": "Over $100,000"
+      },
+      "submitButton": "Submit Inquiry",
+      "submitting": "Submitting..."
     },
     "process": {
       "sectionLabel": "Process",
-      "steps": [
-        { "step": "01", "title": "Submit Inquiry", "desc": "Fill out our online form or call us directly" },
-        { "step": "02", "title": "Requirements Analysis", "desc": "In-depth analysis of project goals and requirements" },
-        { "step": "03", "title": "Proposal", "desc": "Customized solution and project estimate" },
-        { "step": "04", "title": "Project Kickoff", "desc": "Contract signing and project launch" }
-      ]
+      "steps": {
+        "01": { "title": "Submit Inquiry", "desc": "Fill out our online form or call us directly" },
+        "02": { "title": "Requirements Analysis", "desc": "In-depth analysis of project goals and requirements" },
+        "03": { "title": "Proposal", "desc": "Customized solution and project estimate" },
+        "04": { "title": "Project Kickoff", "desc": "Contract signing and project launch" }
+      }
     },
     "tips": {
       "title": "Consultation Tips",
@@ -665,35 +668,62 @@
     },
     "faq": {
       "sectionLabel": "FAQ",
-      "items": [
-        {
+      "items": {
+        "duration": {
           "q": "How long does a typical project take?",
           "a": "Web development projects typically take 2-4 months, while AI projects take 3-6 months."
         },
-        {
+        "maintenance": {
           "q": "What about post-launch maintenance?",
           "a": "We offer 3 months of complimentary support, followed by optional monthly maintenance contracts."
         },
-        {
+        "sourceCode": {
           "q": "Who owns the source code?",
           "a": "Full source code ownership transfers to the client upon final payment."
         },
-        {
+        "remote": {
           "q": "Do you work with remote teams?",
           "a": "Yes, we collaborate effectively through regular video calls and collaboration tools."
         }
-      ]
+      }
     }
   },
   "Common": {
     "submit": "Submit",
     "submitting": "Submitting...",
     "loading": "Loading...",
-    "requiredFieldsError": "Please fill in all required fields.",
-    "submitError": "An error occurred while submitting. Please try again.",
-    "successMessage": "Submitted successfully."
+    "required": "Please fill in all required fields.",
+    "errorGeneric": "An error occurred while submitting. Please try again.",
+    "consultationSuccess": "Your consultation request has been submitted successfully. We will contact you within 24 hours.",
+    "consultationError": "An error occurred while submitting your consultation request. Please try again.",
+    "applicationSuccess": "Your application has been submitted successfully. We will be in touch shortly.",
+    "applicationError": "An error occurred while submitting your application. Please try again.",
+    "currency": {
+      "won": "KRW",
+      "manWon": "x10K KRW",
+      "ukWon": "x100M KRW"
+    },
+    "units": {
+      "month": "months",
+      "person": "members",
+      "case": "cases"
+    },
+    "emailLabels": {
+      "newConsultation": "A new project consultation inquiry has been received",
+      "newApplication": "A new job application has been received",
+      "customerInfo": "Customer Information",
+      "applicantInfo": "Applicant Information",
+      "interestedServices": "Services of Interest",
+      "projectDescription": "Project Description",
+      "selfIntroduction": "About the Applicant",
+      "consultationAutoEmail": "This email was automatically sent by the HANBIT consultation system.",
+      "careerAutoEmail": "This email was automatically sent by the HANBIT recruitment system."
+    }
   },
   "Phone": {
-    "validationError": "Invalid format for {country} (e.g., {example})"
+    "validationError": "Invalid format for {country} (e.g., {example})",
+    "countries": {
+      "KR": "South Korea"
+    }
   }
 }
