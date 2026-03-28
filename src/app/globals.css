@@ -4,39 +4,38 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Brand Colors */
-  --color-navy: #1e3a5f;
-  --color-navy-light: #2a4f7a;
-  --color-navy-dark: #142a47;
+  /* Brand — cool blue spectrum */
+  --color-navy: #1e3a8a;
+  --color-navy-light: #2563eb;
+  --color-navy-dark: #172554;
 
-  --color-copper: #b8734a;
-  --color-copper-light: #d4956e;
-  --color-copper-bg: #fdf5ef;
+  --color-copper: #3b82f6;
+  --color-copper-light: #60a5fa;
+  --color-copper-bg: #eff6ff;
 
-  /* Warm Neutrals */
-  --color-warm-50: #faf8f5;
-  --color-warm-100: #f2ede8;
-  --color-warm-200: #e8e0d8;
-  --color-warm-300: #ddd5cb;
-  --color-warm-400: #c8beb2;
-  --color-warm-500: #9a928a;
-  --color-warm-600: #6b6460;
-  --color-warm-700: #4a4440;
-  --color-warm-800: #2d2926;
-  --color-warm-900: #1a1714;
+  /* Cool Neutrals (slate-tinted) */
+  --color-warm-50: #ffffff;
+  --color-warm-100: #f8fafc;
+  --color-warm-200: #f1f5f9;
+  --color-warm-300: #e2e8f0;
+  --color-warm-400: #94a3b8;
+  --color-warm-500: #64748b;
+  --color-warm-600: #475569;
+  --color-warm-700: #334155;
+  --color-warm-800: #1e293b;
+  --color-warm-900: #0f172a;
 
-  /* Border */
-  --color-warm-border: #ebe5dd;
+  --color-warm-border: #e2e8f0;
 
-  /* Fonts */
+  /* Fonts — all sans-serif for clean corporate look */
   --font-sans: var(--font-sans-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: var(--font-serif-kr), Georgia, "Times New Roman", serif;
+  --font-serif: var(--font-sans-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 @layer base {
   ::selection {
-    background-color: var(--color-navy);
-    color: var(--color-warm-50);
+    background-color: var(--color-navy-light);
+    color: #ffffff;
   }
 
   body {
@@ -46,7 +45,7 @@
   }
 
   h1, h2, h3 {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     color: var(--color-navy);
     letter-spacing: -0.02em;
     line-height: 1.2;
