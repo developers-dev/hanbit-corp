@@ -45,12 +45,12 @@
     "trustIndicators": {
       "label": "주요 고객사 및 파트너",
       "clients": {
-        "finance": "금융그룹 A사",
-        "manufacturing": "제조 대기업 B사",
-        "retail": "유통 C사",
-        "it": "IT 플랫폼 D사",
-        "public": "공공기관 E기관",
-        "global": "글로벌 F사"
+        "finance": "NHN COMMERCE",
+        "manufacturing": "NHN AD",
+        "retail": "KT CS",
+        "it": "MEGAZONE",
+        "public": "HIRONIC",
+        "global": "E1"
       }
     },
     "metrics": {

@@ -45,12 +45,12 @@
     "trustIndicators": {
       "label": "Key Clients & Partners",
       "clients": {
-        "finance": "Financial Group A",
-        "manufacturing": "Manufacturing Corp B",
-        "retail": "Retail Corp C",
-        "it": "IT Platform D",
-        "public": "Public Agency E",
-        "global": "Global Corp F"
+        "finance": "NHN COMMERCE",
+        "manufacturing": "NHN AD",
+        "retail": "KT CS",
+        "it": "MEGAZONE",
+        "public": "HIRONIC",
+        "global": "E1"
       }
     },
     "metrics": {
