@@ -232,19 +232,32 @@
           "description": "A platform architect and AI/ML developer with 10 years of experience, leading across the full technology spectrum from system design to machine learning model development."
         },
         "leeSuJin": {
-          "name": "Sujin Lee",
+          "name": "Jaehyun So",
           "role": "AI/ML Engineer",
           "description": "A data science and machine learning specialist who delivers actionable business insights."
         },
         "parkMinSu": {
-          "name": "Minsu Park",
+          "name": "Hyunyoung Jo",
           "role": "Frontend Specialist",
           "description": "A frontend expert focused on crafting exceptional user experiences."
         },
         "jungHaYoung": {
-          "name": "Hayoung Jung",
+          "name": "Pyungsik Jo",
           "role": "Backend Engineer",
           "description": "A specialist in designing scalable backend systems."
+        }
+      },
+      "advisoryTitle": "Advisory Board",
+      "advisors": {
+        "kimYongHo": {
+          "name": "Yongho Kim",
+          "role": "Financial Advisor (CPA)",
+          "description": "A practicing certified public accountant providing expert advisory on financial strategy, taxation, and corporate accounting."
+        },
+        "kimSangGyeom": {
+          "name": "Sanggyeom Kim",
+          "role": "Legal Advisor (Attorney)",
+          "description": "A practicing attorney providing expert advisory on corporate law, contracts, and intellectual property."
         }
       }
     },

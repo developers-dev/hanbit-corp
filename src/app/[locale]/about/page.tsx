@@ -132,6 +132,28 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+
+          {/* Advisory Board */}
+          <div className="mt-16">
+            <h3 className="text-lg font-bold text-navy mb-8">{t("team.advisoryTitle")}</h3>
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+              {(["kimYongHo", "kimSangGyeom"] as const).map((key) => (
+                <div key={key} className="py-8 border-b border-warm-border">
+                  <div className="flex items-baseline gap-4 mb-3">
+                    <h3 className="text-xl font-semibold text-navy">
+                      {t(`team.advisors.${key}.name`)}
+                    </h3>
+                    <span className="text-sm text-copper">
+                      {t(`team.advisors.${key}.role`)}
+                    </span>
+                  </div>
+                  <p className="text-[15px] leading-relaxed text-warm-600">
+                    {t(`team.advisors.${key}.description`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

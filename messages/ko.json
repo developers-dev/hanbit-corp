@@ -220,19 +220,32 @@
           "description": "10년 경력의 플랫폼 아키텍트이자 AI/ML 개발자로, 시스템 설계부터 머신러닝 모델 구축까지 기술 전 영역을 아우르는 리더입니다."
         },
         "leeSuJin": {
-          "name": "이수진",
+          "name": "소재현",
           "role": "AI/ML Engineer",
           "description": "데이터 사이언스와 머신러닝 전문가로, 비즈니스 인사이트를 제공합니다."
         },
         "parkMinSu": {
-          "name": "박민수",
+          "name": "조현영",
           "role": "Frontend Specialist",
           "description": "사용자 경험에 집중하는 프론트엔드 전문가입니다."
         },
         "jungHaYoung": {
-          "name": "정하영",
+          "name": "조평식",
           "role": "Backend Engineer",
           "description": "확장 가능한 백엔드 시스템 설계 전문가입니다."
+        }
+      },
+      "advisoryTitle": "자문위원",
+      "advisors": {
+        "kimYongHo": {
+          "name": "김용호",
+          "role": "재무 자문 (공인회계사)",
+          "description": "현직 회계사로서 재무 전략, 세무, 기업 회계 전반에 걸쳐 전문 자문을 제공합니다."
+        },
+        "kimSangGyeom": {
+          "name": "김상겸",
+          "role": "법률 자문 (변호사)",
+          "description": "현직 변호사로서 기업 법무, 계약, 지적재산권 등 법률 전반에 걸쳐 전문 자문을 제공합니다."
         }
       }
     },
