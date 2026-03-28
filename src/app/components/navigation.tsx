@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 
-export default function Navigation() {
+export default function Navigation({ transparent = false }: { transparent?: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -13,6 +13,9 @@ export default function Navigation() {
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
+
+  // 투명모드(메인 히어로 위)에서만 스크롤 전 흰 글자, 그 외는 항상 다크 글자
+  const isDark = !transparent || scrolled
 
   const navItems = [
     { name: "서비스", href: "/services" },
@@ -24,7 +27,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+        isDark
           ? "bg-white/95 backdrop-blur-sm border-b border-warm-border shadow-sm"
           : "bg-transparent"
       }`}
@@ -32,7 +35,7 @@ export default function Navigation() {
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <span className={`text-lg font-bold tracking-tight ${scrolled ? "text-navy" : "text-white"}`}>
+            <span className={`text-lg font-bold tracking-tight ${isDark ? "text-navy" : "text-white"}`}>
               HANBIT
             </span>
           </Link>
@@ -43,7 +46,7 @@ export default function Navigation() {
                 key={item.name}
                 href={item.href}
                 className={`text-[14px] font-medium transition-colors ${
-                  scrolled
+                  isDark
                     ? "text-warm-600 hover:text-navy"
                     : "text-warm-400 hover:text-white"
                 }`}
@@ -60,7 +63,7 @@ export default function Navigation() {
           </div>
 
           <button
-            className={`md:hidden p-2 ${scrolled ? "text-navy" : "text-white"}`}
+            className={`md:hidden p-2 ${isDark ? "text-navy" : "text-white"}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

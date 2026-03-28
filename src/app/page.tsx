@@ -8,7 +8,7 @@ import Link from "next/link"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
+      <Navigation transparent />
 
       {/* Hero */}
       <section className="bg-navy text-white pt-36 pb-28 lg:pb-36">
