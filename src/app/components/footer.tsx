@@ -2,52 +2,56 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-dark text-warm-400">
-      <div className="max-w-[1120px] mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-[2fr_1fr_1fr] gap-12 mb-14">
+    <footer className="bg-navy-dark text-warm-500">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
+        {/* Main Footer */}
+        <div className="grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 py-16">
           <div>
-            <div className="mb-5">
-              <span className="text-[22px] font-bold tracking-tight text-white font-serif">
-                HANBIT
-              </span>
-              <span className="w-1.5 h-1.5 rounded-full inline-block mb-0.5 ml-0.5 bg-copper" />
-            </div>
-            <p className="text-[15px] leading-relaxed max-w-sm mb-6 text-warm-500">
+            <span className="text-lg font-bold text-white block mb-4">HANBIT</span>
+            <p className="text-sm leading-relaxed max-w-xs mb-6 text-warm-600">
               보이지 않는 곳까지, 완벽하게.
               <br />
-              타협 없는 개발 파트너십을 약속합니다.
+              엔터프라이즈급 기술 솔루션 파트너.
             </p>
-            <p className="text-sm text-warm-600">
-              &copy; {new Date().getFullYear()} HANBIT. All rights reserved.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="text-sm font-medium text-white mb-5 tracking-wide">서비스</h4>
-            <div className="flex flex-col gap-3 text-[15px] text-warm-500">
-              <Link href="/services" className="hover:text-white transition-colors">AI & Data</Link>
-              <Link href="/services" className="hover:text-white transition-colors">Web Development</Link>
-              <Link href="/services" className="hover:text-white transition-colors">System Architecture</Link>
-              <Link href="/services" className="hover:text-white transition-colors">Custom Platform</Link>
+            <div className="flex flex-col gap-1 text-sm text-warm-600">
+              <span>hello@hanbit.dev</span>
+              <span>+82 2-1234-5678</span>
             </div>
           </div>
 
           <div>
-            <h4 className="text-sm font-medium text-white mb-5 tracking-wide">회사</h4>
-            <div className="flex flex-col gap-3 text-[15px] text-warm-500">
+            <h4 className="text-sm font-semibold text-warm-400 mb-4">서비스</h4>
+            <div className="flex flex-col gap-2.5 text-sm">
+              <Link href="/services" className="hover:text-white transition-colors">AI & Data</Link>
+              <Link href="/services" className="hover:text-white transition-colors">Web Platform</Link>
+              <Link href="/services" className="hover:text-white transition-colors">Cloud & Infra</Link>
+              <Link href="/services" className="hover:text-white transition-colors">Custom Solution</Link>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-warm-400 mb-4">회사</h4>
+            <div className="flex flex-col gap-2.5 text-sm">
               <Link href="/about" className="hover:text-white transition-colors">회사 소개</Link>
-              <Link href="/portfolio" className="hover:text-white transition-colors">포트폴리오</Link>
+              <Link href="/portfolio" className="hover:text-white transition-colors">구축 사례</Link>
               <Link href="/careers" className="hover:text-white transition-colors">채용</Link>
-              <Link href="/contact" className="hover:text-white transition-colors">연락처</Link>
+              <Link href="/contact" className="hover:text-white transition-colors">문의</Link>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-warm-400 mb-4">연락처</h4>
+            <div className="flex flex-col gap-2.5 text-sm">
+              <span>서울특별시 강남구</span>
+              <span>테헤란로 123</span>
+              <span>평일 09:00 - 18:00</span>
             </div>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-navy-light/30">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-warm-600">
-            <span>hello@hanbit.dev</span>
-            <span>서울특별시 강남구</span>
-          </div>
+        {/* Bottom Bar */}
+        <div className="py-6 border-t border-white/10 text-xs text-warm-600">
+          &copy; {new Date().getFullYear()} HANBIT Corp. All rights reserved.
         </div>
       </div>
     </footer>

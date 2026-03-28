@@ -16,7 +16,7 @@ export default function Navigation() {
 
   const navItems = [
     { name: "서비스", href: "/services" },
-    { name: "포트폴리오", href: "/portfolio" },
+    { name: "구축 사례", href: "/portfolio" },
     { name: "회사소개", href: "/about" },
     { name: "채용", href: "/careers" },
   ]
@@ -25,39 +25,42 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-warm-50/95 backdrop-blur-sm border-b border-warm-border"
+          ? "bg-white/95 backdrop-blur-sm border-b border-warm-border shadow-sm"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1120px] mx-auto px-6">
-        <div className="flex items-center justify-between h-[72px]">
-          <Link href="/" className="flex items-baseline gap-0.5 group">
-            <span className="text-[22px] font-bold tracking-tight font-serif text-navy">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
+        <div className="flex items-center justify-between h-16">
+          <Link href="/" className="flex items-center">
+            <span className={`text-lg font-bold tracking-tight ${scrolled ? "text-navy" : "text-white"}`}>
               HANBIT
             </span>
-            <span className="w-1.5 h-1.5 rounded-full inline-block mb-0.5 bg-copper" />
           </Link>
 
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-[15px] font-medium text-warm-600 hover:text-navy transition-colors duration-200"
+                className={`text-[14px] font-medium transition-colors ${
+                  scrolled
+                    ? "text-warm-600 hover:text-navy"
+                    : "text-warm-400 hover:text-white"
+                }`}
               >
                 {item.name}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-warm-50 px-6 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200"
+              className="inline-flex items-center gap-2 bg-copper hover:bg-copper-light text-white px-5 py-2 rounded-md text-[13px] font-semibold transition-colors"
             >
-              상담 문의
+              문의하기
             </Link>
           </div>
 
           <button
-            className="md:hidden p-2 rounded-lg text-warm-800"
+            className={`md:hidden p-2 ${scrolled ? "text-navy" : "text-white"}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -65,24 +68,24 @@ export default function Navigation() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden py-6 border-t border-warm-border bg-warm-50">
+          <div className="md:hidden py-4 border-t border-warm-border bg-white rounded-b-lg shadow-lg">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-[15px] font-medium px-3 py-3 rounded-lg text-warm-600 hover:text-navy transition-colors"
+                  className="text-[14px] font-medium px-4 py-3 text-warm-700 hover:text-navy hover:bg-warm-100 rounded-md transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="mt-4 px-3">
+              <div className="px-4 pt-3">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center w-full gap-2 bg-navy hover:bg-navy-light text-warm-50 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                  className="flex items-center justify-center bg-copper hover:bg-copper-light text-white py-2.5 rounded-md text-[13px] font-semibold transition-colors"
                 >
-                  상담 문의
+                  문의하기
                 </Link>
               </div>
             </div>
