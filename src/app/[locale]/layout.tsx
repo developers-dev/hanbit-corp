@@ -2,6 +2,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { routing } from "@/i18n/routing"
+import LocaleSetter from "./components/locale-setter"
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -25,11 +26,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `document.documentElement.lang="${locale}"`,
-        }}
-      />
+      <LocaleSetter />
       {children}
     </NextIntlClientProvider>
   )
