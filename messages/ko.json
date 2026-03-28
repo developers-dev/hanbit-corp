@@ -215,9 +215,9 @@
       "title": "우리 팀",
       "members": {
         "kimTaeHyun": {
-          "name": "김태현",
-          "role": "CEO & Lead Developer",
-          "description": "10년 경력의 풀스택 개발자로, 완벽한 코드에 대한 철학을 가지고 있습니다."
+          "name": "김진한",
+          "role": "CEO & Platform Architect / AI Developer",
+          "description": "10년 경력의 플랫폼 아키텍트이자 AI/ML 개발자로, 시스템 설계부터 머신러닝 모델 구축까지 기술 전 영역을 아우르는 리더입니다."
         },
         "leeSuJin": {
           "name": "이수진",
