@@ -5,6 +5,7 @@ import { useState } from "react"
 import { ArrowRight, Loader2 } from "lucide-react"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
+import { submitConsultation } from "../actions/contact-actions"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -25,30 +26,25 @@ export default function ContactPage() {
     setMessage(null)
 
     const formData = new FormData(e.currentTarget)
-    const data = {
-      company: formData.get("company") as string,
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      phone: formData.get("phone") as string,
-      services: formData.getAll("services") as string[],
-      budget: formData.get("budget") as string,
-      description: formData.get("description") as string,
-      startDate: formData.get("startDate") as string,
-    }
 
-    if (!data.name || !data.email || !data.phone || !data.description) {
+    if (!formData.get("name") || !formData.get("email") || !formData.get("phone") || !formData.get("description")) {
       setMessage({ type: "error", text: "필수 항목을 모두 입력해주세요." })
       setIsSubmitting(false)
       return
     }
 
-    setTimeout(() => {
-      console.log("Consultation Data:", data)
-      setMessage({ type: "success", text: "상담 신청이 성공적으로 제출되었습니다. 24시간 내에 연락드리겠습니다." })
+    try {
+      const result = await submitConsultation(formData)
+      setMessage({ type: result.success ? "success" : "error", text: result.message })
+      if (result.success) {
+        const form = e.target as HTMLFormElement
+        form.reset()
+      }
+    } catch {
+      setMessage({ type: "error", text: "전송 중 오류가 발생했습니다. 다시 시도해주세요." })
+    } finally {
       setIsSubmitting(false)
-      const form = e.target as HTMLFormElement
-      form.reset()
-    }, 2000)
+    }
   }
 
   return (

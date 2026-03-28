@@ -6,6 +6,7 @@ import { ArrowRight, Loader2 } from "lucide-react"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import JobApplicationModal from "../components/job-application-modal"
+import { submitJobApplication } from "../actions/career-actions"
 
 export default function CareersPage() {
   const [selectedPosition, setSelectedPosition] = useState<string | null>(null)
@@ -91,28 +92,25 @@ export default function CareersPage() {
     setMessage(null)
 
     const formData = new FormData(e.currentTarget)
-    const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      phone: formData.get("phone") as string,
-      position: formData.get("position") as string,
-      introduction: formData.get("introduction") as string,
-      portfolio: formData.get("portfolio") as string,
-    }
 
-    if (!data.name || !data.email || !data.phone || !data.position || !data.introduction) {
+    if (!formData.get("name") || !formData.get("email") || !formData.get("phone") || !formData.get("position") || !formData.get("introduction")) {
       setMessage({ type: "error", text: "필수 항목을 모두 입력해주세요." })
       setIsSubmitting(false)
       return
     }
 
-    setTimeout(() => {
-      console.log("Application Data:", data)
-      setMessage({ type: "success", text: "지원서가 성공적으로 제출되었습니다. 빠른 시일 내에 연락드리겠습니다." })
+    try {
+      const result = await submitJobApplication(formData)
+      setMessage({ type: result.success ? "success" : "error", text: result.message })
+      if (result.success) {
+        const form = e.target as HTMLFormElement
+        form.reset()
+      }
+    } catch {
+      setMessage({ type: "error", text: "전송 중 오류가 발생했습니다. 다시 시도해주세요." })
+    } finally {
       setIsSubmitting(false)
-      const form = e.target as HTMLFormElement
-      form.reset()
-    }, 2000)
+    }
   }
 
   return (
