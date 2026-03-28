@@ -2,11 +2,18 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/navigation"
+import { useTranslations } from "next-intl"
+import { useLocale } from "next-intl"
+import { useRouter, usePathname } from "@/i18n/navigation"
 
 export default function Navigation({ transparent = false }: { transparent?: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const t = useTranslations("Nav")
+  const locale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -17,11 +24,16 @@ export default function Navigation({ transparent = false }: { transparent?: bool
   // 투명모드(메인 히어로 위)에서만 스크롤 전 흰 글자, 그 외는 항상 다크 글자
   const isDark = !transparent || scrolled
 
+  const switchLocale = () => {
+    const newLocale = locale === "ko" ? "en" : "ko"
+    router.replace(pathname, { locale: newLocale })
+  }
+
   const navItems = [
-    { name: "서비스", href: "/services" },
-    { name: "구축 사례", href: "/portfolio" },
-    { name: "회사소개", href: "/about" },
-    { name: "채용", href: "/careers" },
+    { name: t("services"), href: "/services" },
+    { name: t("portfolio"), href: "/portfolio" },
+    { name: t("about"), href: "/about" },
+    { name: t("careers"), href: "/careers" },
   ]
 
   return (
@@ -58,8 +70,18 @@ export default function Navigation({ transparent = false }: { transparent?: bool
               href="/contact"
               className="inline-flex items-center gap-2 bg-copper hover:bg-copper-light text-white px-5 py-2 rounded-md text-[13px] font-semibold transition-colors"
             >
-              문의하기
+              {t("contact")}
             </Link>
+            <button
+              onClick={switchLocale}
+              className={`text-[13px] font-medium px-3 py-1.5 rounded-md border transition-colors ${
+                isDark
+                  ? "border-warm-border text-warm-600 hover:text-navy hover:border-navy"
+                  : "border-warm-500 text-warm-300 hover:text-white hover:border-white"
+              }`}
+            >
+              {locale === "ko" ? "EN" : "KO"}
+            </button>
           </div>
 
           <button
@@ -83,13 +105,19 @@ export default function Navigation({ transparent = false }: { transparent?: bool
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 pt-3">
+              <div className="px-4 pt-3 flex gap-2">
                 <Link
                   href="/contact"
-                  className="flex items-center justify-center bg-copper hover:bg-copper-light text-white py-2.5 rounded-md text-[13px] font-semibold transition-colors"
+                  className="flex-1 flex items-center justify-center bg-copper hover:bg-copper-light text-white py-2.5 rounded-md text-[13px] font-semibold transition-colors"
                 >
-                  문의하기
+                  {t("contact")}
                 </Link>
+                <button
+                  onClick={switchLocale}
+                  className="text-[13px] font-medium px-3 py-2.5 rounded-md border border-warm-border text-warm-600 hover:text-navy hover:border-navy transition-colors"
+                >
+                  {locale === "ko" ? "EN" : "KO"}
+                </button>
               </div>
             </div>
           </div>

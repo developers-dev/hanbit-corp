@@ -1,0 +1,699 @@
+{
+  "Nav": {
+    "brand": "HANBIT",
+    "services": "Services",
+    "portfolio": "Case Studies",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact Us"
+  },
+  "Footer": {
+    "brand": "HANBIT",
+    "tagline": "Perfection in every detail.",
+    "taglineSub": "Your enterprise technology partner.",
+    "email": "hello@hanbit.dev",
+    "phone": "+82 2-1234-5678",
+    "servicesTitle": "Services",
+    "serviceLinks": {
+      "aiData": "AI & Data",
+      "webPlatform": "Web Platform",
+      "cloudInfra": "Cloud & Infra",
+      "customSolution": "Custom Solution"
+    },
+    "companyTitle": "Company",
+    "companyLinks": {
+      "about": "About Us",
+      "portfolio": "Case Studies",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "contactTitle": "Contact",
+    "address1": "Gangnam-gu, Seoul",
+    "address2": "123 Teheran-ro",
+    "hours": "Mon-Fri 09:00 - 18:00",
+    "copyright": "HANBIT Corp. All rights reserved."
+  },
+  "Home": {
+    "hero": {
+      "title": "Engineering your competitive edge in technology",
+      "description": "HANBIT delivers digital transformation and system modernization across AI, cloud, data, and platform solutions for enterprises worldwide.",
+      "ctaPrimary": "Request a Consultation",
+      "ctaSecondary": "View Case Studies"
+    },
+    "trustIndicators": {
+      "label": "Key Clients & Partners",
+      "clients": {
+        "finance": "Financial Group A",
+        "manufacturing": "Manufacturing Corp B",
+        "retail": "Retail Corp C",
+        "it": "IT Platform D",
+        "public": "Public Agency E",
+        "global": "Global Corp F"
+      }
+    },
+    "metrics": {
+      "projects": {
+        "value": "200+",
+        "label": "Projects Delivered",
+        "sub": "Finance, manufacturing, retail, public sector & more"
+      },
+      "availability": {
+        "value": "99.9%",
+        "label": "Service Availability",
+        "sub": "SLA-backed uptime guarantee"
+      },
+      "experience": {
+        "value": "8 yrs",
+        "label": "In Business",
+        "sub": "Founded 2019, consistently growing"
+      },
+      "engineers": {
+        "value": "30+",
+        "label": "Expert Engineers",
+        "sub": "Senior-level specialists across domains"
+      }
+    },
+    "industries": {
+      "sectionLabel": "Industries",
+      "title": "Industry-Specific Solutions",
+      "description": "We deliver tailored solutions built on deep understanding of each industry's regulatory environment, business processes, and technical requirements.",
+      "items": {
+        "finance": {
+          "sector": "Finance & Fintech",
+          "desc": "Real-time trading systems, risk management, and regulatory compliance platforms",
+          "projects": "45+"
+        },
+        "manufacturing": {
+          "sector": "Manufacturing & Logistics",
+          "desc": "Smart factory solutions, supply chain optimization, and predictive maintenance systems",
+          "projects": "38+"
+        },
+        "retail": {
+          "sector": "Retail & E-Commerce",
+          "desc": "Omnichannel platforms, AI-powered recommendations, and high-traffic processing systems",
+          "projects": "52+"
+        },
+        "public": {
+          "sector": "Public Sector & Education",
+          "desc": "Government system modernization, data portals, and educational platform development",
+          "projects": "28+"
+        },
+        "healthcare": {
+          "sector": "Healthcare",
+          "desc": "Medical data analytics, EMR integration, and telehealth platform development",
+          "projects": "15+"
+        },
+        "media": {
+          "sector": "Media & Content",
+          "desc": "Content management systems, real-time streaming, and AI-driven personalization",
+          "projects": "22+"
+        }
+      }
+    },
+    "capabilities": {
+      "sectionLabel": "Capabilities",
+      "title": "Core Capabilities",
+      "viewAll": "Explore All Services",
+      "items": {
+        "aiData": {
+          "num": "01",
+          "title": "AI & Data Intelligence",
+          "desc": "From ML model development and MLOps pipeline construction to LLM fine-tuning and data lake design, we build data-driven decision-making frameworks.",
+          "tags": ["ML/DL Modeling", "Data Pipeline", "LLM Fine-tuning", "MLOps"]
+        },
+        "webPlatform": {
+          "num": "02",
+          "title": "Enterprise Web Platform",
+          "desc": "We architect and develop scalable web platforms and back-office systems built on microservices, designed to handle massive concurrent traffic.",
+          "tags": ["React/Next.js", "MSA", "Real-time Processing", "Admin Systems"]
+        },
+        "cloudInfra": {
+          "num": "03",
+          "title": "Cloud & Infrastructure",
+          "desc": "We handle legacy cloud migrations, container orchestration, IaC-based infrastructure automation, and security architecture implementation.",
+          "tags": ["AWS/GCP", "Kubernetes", "Terraform", "CI/CD"]
+        },
+        "customSolution": {
+          "num": "04",
+          "title": "Custom Solution Development",
+          "desc": "We develop bespoke solutions optimized for your business needs, including e-commerce, CMS, ERP integrations, and mobile applications.",
+          "tags": ["E-commerce", "CMS/ERP", "Mobile App", "API Integration"]
+        }
+      }
+    },
+    "projects": {
+      "sectionLabel": "Projects",
+      "title": "Featured Case Studies",
+      "viewAll": "View All Case Studies",
+      "items": {
+        "aiRisk": {
+          "category": "AI/ML - Finance",
+          "title": "Real-Time AI Risk Analysis System",
+          "client": "Major Korean Financial Group",
+          "results": [
+            "94% risk detection accuracy",
+            "Sub-50ms processing latency",
+            "KRW 12B annual loss prevention"
+          ]
+        },
+        "smartFactory": {
+          "category": "Cloud - Manufacturing",
+          "title": "Smart Factory Cloud Migration",
+          "client": "Manufacturing enterprise (KRW 5T+ revenue)",
+          "results": [
+            "40% reduction in infrastructure costs",
+            "Deployment cycle: 2 weeks to 1 day",
+            "99.99% system availability"
+          ]
+        },
+        "commerce": {
+          "category": "Platform - Retail",
+          "title": "Unified Commerce Platform",
+          "client": "Top 10 Korean Retailer",
+          "results": [
+            "500K+ daily order processing",
+            "60% increase in mobile conversion",
+            "10x peak traffic capacity"
+          ]
+        }
+      }
+    },
+    "differentiators": {
+      "sectionLabel": "Why HANBIT",
+      "title": "Why Choose HANBIT",
+      "items": {
+        "domain": {
+          "title": "Industry Domain Expertise",
+          "desc": "We deliver practical solutions grounded in deep understanding of regulatory environments and business processes across finance, manufacturing, retail, and the public sector."
+        },
+        "endToEnd": {
+          "title": "End-to-End Technical Capability",
+          "desc": "From requirements analysis through design, development, testing, deployment, and operations — our in-house team ensures consistent quality and accountability at every stage."
+        },
+        "partnership": {
+          "title": "Long-Term Technology Partnership",
+          "desc": "We go beyond one-off projects, contributing to our clients' competitive advantage through continuous system enhancement and ongoing technical support."
+        }
+      }
+    },
+    "cta": {
+      "title": "Let's discuss your technology challenges",
+      "description": "Our engineers will recommend the optimal architecture and implementation strategy tailored to your environment.",
+      "button": "Get in Touch"
+    }
+  },
+  "About": {
+    "hero": {
+      "sectionLabel": "About",
+      "title": "We are HANBIT",
+      "description": "A development studio that pursues perfection in every detail, turning our clients' vision into reality through code."
+    },
+    "mission": {
+      "sectionLabel": "Mission",
+      "title": "Flawless Code, Flawless Results",
+      "description": "Our mission is to drive our clients' business success through impeccable code and precision engineering.",
+      "items": ["100% code quality", "Client satisfaction first", "Continuous innovation"]
+    },
+    "vision": {
+      "sectionLabel": "Vision",
+      "title": "Building a Better World Through Technology",
+      "description": "We deliver innovative solutions that combine technology and creativity to make the world a better place.",
+      "items": ["Global technology leader", "Innovative solutions", "Sustainable growth"]
+    },
+    "team": {
+      "sectionLabel": "Team",
+      "title": "Our Team",
+      "members": [
+        {
+          "name": "Taehyun Kim",
+          "role": "CEO & Lead Developer",
+          "description": "A full-stack developer with 10 years of experience and a philosophy of writing perfect code.",
+          "skills": ["React", "Node.js", "System Architecture"]
+        },
+        {
+          "name": "Sujin Lee",
+          "role": "AI/ML Engineer",
+          "description": "A data science and machine learning specialist who delivers actionable business insights.",
+          "skills": ["Python", "TensorFlow", "Data Analysis"]
+        },
+        {
+          "name": "Minsu Park",
+          "role": "Frontend Specialist",
+          "description": "A frontend expert focused on crafting exceptional user experiences.",
+          "skills": ["React", "TypeScript", "UI/UX"]
+        },
+        {
+          "name": "Hayoung Jung",
+          "role": "Backend Engineer",
+          "description": "A specialist in designing scalable backend systems.",
+          "skills": ["Node.js", "Database", "Cloud"]
+        }
+      ]
+    },
+    "timeline": {
+      "sectionLabel": "History",
+      "title": "Our Journey",
+      "events": [
+        { "year": "2019", "event": "HANBIT Founded", "description": "Launched as a development studio committed to engineering excellence" },
+        { "year": "2020", "event": "First AI Project", "description": "Successfully developed an ML-based recommendation system" },
+        { "year": "2021", "event": "Team Expansion", "description": "Grew to a team of 4 specialized developers" },
+        { "year": "2022", "event": "Enterprise Partnerships", "description": "Secured long-term contracts with major corporations" },
+        { "year": "2023", "event": "Technology Innovation", "description": "Launched LLM fine-tuning services" },
+        { "year": "2024", "event": "Global Expansion", "description": "Began serving international clients" }
+      ]
+    },
+    "values": {
+      "sectionLabel": "Values",
+      "title": "Core Values",
+      "items": [
+        { "title": "Excellence", "desc": "We pursue the highest quality in every project we undertake" },
+        { "title": "Collaboration", "desc": "We achieve outstanding results through teamwork and open communication" },
+        { "title": "Innovation", "desc": "We create new value through relentless innovation" }
+      ]
+    },
+    "cta": {
+      "title": "Let's Build the Future Together",
+      "description": "Partner with HANBIT to create the perfect solution.",
+      "ctaPrimary": "Start a Project",
+      "ctaSecondary": "Join Our Team"
+    }
+  },
+  "Services": {
+    "hero": {
+      "sectionLabel": "Services",
+      "title": "Our Services",
+      "description": "We deliver differentiated development solutions that drive business success through precision engineering and uncompromising quality."
+    },
+    "services": [
+      {
+        "title": "AI & Data Solutions",
+        "subtitle": "Intelligent Data Analytics & AI Solutions",
+        "description": "We provide business insights and automated decision-making through machine learning, data science, and LLM fine-tuning.",
+        "features": [
+          "Data Analysis & Visualization (DA)",
+          "Machine Learning Model Development (DS)",
+          "Data Pipeline Engineering (DE)",
+          "ML Systems Operations (MLE)",
+          "LLM Fine-tuning & Optimization",
+          "Predictive Analytics & Recommendation Systems"
+        ],
+        "technologies": ["Python", "TensorFlow", "PyTorch", "Pandas", "Apache Spark", "MLflow"],
+        "price": "Custom quote per project"
+      },
+      {
+        "title": "Web Development",
+        "subtitle": "Scalable Web Application Development",
+        "description": "We build web applications that deliver both performance and exceptional user experience using modern technology stacks.",
+        "features": [
+          "React/Next.js Frontend Development",
+          "Node.js/Python Backend APIs",
+          "Database Design & Optimization",
+          "Responsive Web Design",
+          "Performance Optimization & SEO",
+          "Real-time Feature Implementation"
+        ],
+        "technologies": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Redis"],
+        "price": "Starting at $2,500/mo"
+      },
+      {
+        "title": "System Architecture",
+        "subtitle": "Robust & Scalable System Design",
+        "description": "We design reliable and scalable systems through cloud-native architecture and microservices.",
+        "features": [
+          "Cloud Infrastructure Design",
+          "Microservices Architecture",
+          "DevOps Pipeline Construction",
+          "Containerization & Orchestration",
+          "Monitoring & Logging Systems",
+          "Security & Performance Optimization"
+        ],
+        "technologies": ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"],
+        "price": "$125/hr consulting"
+      },
+      {
+        "title": "Custom Platforms",
+        "subtitle": "Bespoke Platform & Solution Development",
+        "description": "We develop custom platforms and integrated solutions perfectly aligned with your business requirements.",
+        "features": [
+          "E-Commerce Platform Development",
+          "CMS & Admin Systems",
+          "Mobile Applications",
+          "API Integration & Connectivity",
+          "Legacy System Modernization",
+          "Custom Business Logic"
+        ],
+        "technologies": ["React Native", "Flutter", "GraphQL", "Microservices", "REST API", "WebSocket"],
+        "price": "Custom quote per project"
+      }
+    ],
+    "taxNote": "excl. tax",
+    "consultButton": "Request a Consultation",
+    "featuresLabel": "Key Features",
+    "process": {
+      "sectionLabel": "Process",
+      "title": "Development Process",
+      "steps": [
+        { "step": "01", "title": "Requirements Analysis", "desc": "We precisely analyze your business goals and technical requirements" },
+        { "step": "02", "title": "Design & Planning", "desc": "We define the optimal architecture and development roadmap" },
+        { "step": "03", "title": "Development & Implementation", "desc": "We execute phased development using agile methodologies" },
+        { "step": "04", "title": "Testing & Deployment", "desc": "We perform thorough testing and ensure stable deployment" }
+      ]
+    },
+    "cta": {
+      "title": "Start Your Project",
+      "description": "Get a free consultation and we'll recommend the ideal solution for you.",
+      "ctaPrimary": "Request Free Consultation",
+      "ctaSecondary": "View Portfolio"
+    }
+  },
+  "Portfolio": {
+    "hero": {
+      "sectionLabel": "Portfolio",
+      "title": "Our Work",
+      "description": "Explore our diverse portfolio of completed projects and see HANBIT's technical expertise in action."
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "AI Recommendation System",
+        "category": "AI/ML",
+        "client": "E-Commerce Platform",
+        "duration": "3 months",
+        "team": "4 members",
+        "description": "Built an ML-powered personalized product recommendation system that increased purchase conversion by 35%.",
+        "detailedDescription": "We built a real-time personalization recommendation system for a large-scale e-commerce platform. By implementing a hybrid recommendation algorithm combining collaborative and content-based filtering, we significantly improved recommendation accuracy.",
+        "results": ["35% increase in conversions", "50% longer session duration", "25% revenue uplift"],
+        "metrics": {
+          "performance": "99.5% availability",
+          "speed": "50ms avg response",
+          "accuracy": "85% recommendation accuracy"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Fintech Dashboard",
+        "category": "Web Development",
+        "client": "Financial Startup",
+        "duration": "4 months",
+        "team": "5 members",
+        "description": "Developed a web application for real-time financial data visualization and transaction management.",
+        "detailedDescription": "We built a comprehensive dashboard system for a financial startup. It collects and visualizes real-time stock, cryptocurrency, and forex data, enabling users to intuitively manage their investment portfolios.",
+        "results": ["Real-time data processing", "99.9% availability", "95% user satisfaction"],
+        "metrics": {
+          "users": "10,000+ DAU",
+          "transactions": "KRW 100M+ daily volume",
+          "uptime": "99.9% uptime"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cloud Migration",
+        "category": "System Architecture",
+        "client": "Manufacturing Enterprise",
+        "duration": "6 months",
+        "team": "3 members",
+        "description": "Migrated a legacy system to AWS cloud, reducing operational costs by 40%.",
+        "detailedDescription": "We transformed a 20-year-old legacy system into a modern cloud architecture. Through microservices adoption, containerization, and CI/CD pipeline implementation, we dramatically improved scalability and maintainability.",
+        "results": ["40% cost reduction", "80% faster deployments", "Improved system reliability"],
+        "metrics": {
+          "cost": "40% cost savings",
+          "deployment": "2 hrs to 20 min",
+          "reliability": "99.99% availability"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Mobile Commerce App",
+        "category": "Mobile",
+        "client": "Fashion Brand",
+        "duration": "5 months",
+        "team": "6 members",
+        "description": "Developed a cross-platform mobile shopping app with React Native, increasing mobile revenue by 60%.",
+        "detailedDescription": "We developed a premium mobile shopping experience for a fashion brand. Differentiated user experiences were achieved through AR-powered virtual fitting and personalized styling recommendations.",
+        "results": ["60% mobile revenue increase", "4.8 App Store rating", "100K+ downloads"],
+        "metrics": {
+          "downloads": "100,000+",
+          "rating": "4.8/5.0",
+          "retention": "75% monthly retention"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Data Analytics Platform",
+        "category": "Data Engineering",
+        "client": "Marketing Agency",
+        "duration": "4 months",
+        "team": "4 members",
+        "description": "Built an integrated platform for big data collection, processing, and analysis.",
+        "detailedDescription": "We built a data platform that enables real-time analysis and optimization of marketing campaign effectiveness. It collects data from diverse sources and delivers insights through real-time processing.",
+        "results": ["10x data throughput", "70% faster analysis", "Improved insight accuracy"],
+        "metrics": {
+          "data": "1TB+ daily",
+          "speed": "< 1s latency",
+          "accuracy": "92% prediction accuracy"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Enterprise LLM Chatbot",
+        "category": "AI/LLM",
+        "client": "Enterprise HQ",
+        "duration": "3 months",
+        "team": "3 members",
+        "description": "Built an intelligent internal chatbot system powered by conversational AI.",
+        "detailedDescription": "We developed an intelligent chatbot that instantly answers employees' work-related questions 24/7. It delivers accurate information by combining RAG-based retrieval with the company's internal knowledge base.",
+        "results": ["80% faster inquiry resolution", "94% employee satisfaction", "Improved productivity"],
+        "metrics": {
+          "questions": "1,500+ daily",
+          "accuracy": "96% answer accuracy",
+          "response": "2.3s response time"
+        }
+      }
+    ],
+    "techStackLabel": "Tech Stack",
+    "liveDemoButton": "View Live Demo",
+    "stats": [
+      { "value": "50+", "label": "Projects Completed" },
+      { "value": "100%", "label": "Client Satisfaction" },
+      { "value": "99.9%", "label": "System Reliability" },
+      { "value": "24/7", "label": "Technical Support" }
+    ],
+    "cta": {
+      "title": "Your Project Could Be Next",
+      "description": "Let HANBIT's expertise and experience drive your business to success.",
+      "button": "Start a Project"
+    }
+  },
+  "Careers": {
+    "hero": {
+      "sectionLabel": "Careers",
+      "title": "Join Us and\nGrow Together",
+      "description": "We're looking for talented developers ready to take on new challenges with HANBIT, where we craft flawless code and innovative solutions."
+    },
+    "whyHanbit": [
+      { "title": "Work-Life Balance", "desc": "Flexible hours and remote work options" },
+      { "title": "Growth Support", "desc": "Education, conference, and book allowances" },
+      { "title": "Teamwork", "desc": "Flat hierarchy and open communication" },
+      { "title": "Compensation", "desc": "Competitive salary and comprehensive benefits" }
+    ],
+    "positions": {
+      "sectionLabel": "Open Positions",
+      "title": "Open Positions",
+      "items": [
+        {
+          "title": "Senior Frontend Developer",
+          "department": "Engineering",
+          "type": "Full-time",
+          "location": "Gangnam-gu, Seoul",
+          "salary": "$50K - $67K",
+          "description": "We're looking for a developer who puts user experience first and builds frontend applications with React/Next.js.",
+          "requirements": [
+            "3+ years with React/Next.js",
+            "Proficient in TypeScript",
+            "Responsive web development experience",
+            "Git-based collaboration experience",
+            "Strong understanding of UI/UX"
+          ],
+          "benefits": ["Flexible hours", "Remote work", "Education budget", "Health checkups", "Team retreats"]
+        },
+        {
+          "title": "Backend Engineer",
+          "department": "Engineering",
+          "type": "Full-time",
+          "location": "Gangnam-gu, Seoul",
+          "salary": "$46K - $63K",
+          "description": "We're hiring an engineer to design and implement scalable backend systems.",
+          "requirements": [
+            "3+ years with Node.js or Python",
+            "Database design experience",
+            "RESTful API development",
+            "Cloud services experience",
+            "Understanding of microservices architecture"
+          ],
+          "benefits": ["Performance bonus", "Stock options", "Conference sponsorship", "Book allowance", "Lunch provided"]
+        },
+        {
+          "title": "AI/ML Engineer",
+          "department": "AI Team",
+          "type": "Full-time",
+          "location": "Gangnam-gu, Seoul",
+          "salary": "$58K - $75K",
+          "description": "We're looking for an AI engineer to lead machine learning model development and LLM fine-tuning.",
+          "requirements": [
+            "Experience with Python, TensorFlow/PyTorch",
+            "ML project experience",
+            "Data preprocessing and analysis",
+            "LLM fine-tuning experience preferred",
+            "Research publication experience preferred"
+          ],
+          "benefits": ["R&D budget", "Publication support", "GPU server access", "Conference attendance", "Patent bonuses"]
+        },
+        {
+          "title": "DevOps Engineer",
+          "department": "Infrastructure",
+          "type": "Full-time",
+          "location": "Gangnam-gu, Seoul",
+          "salary": "$54K - $71K",
+          "description": "Responsible for cloud infrastructure deployment and CI/CD pipeline management.",
+          "requirements": [
+            "AWS/GCP/Azure experience",
+            "Docker/Kubernetes operations",
+            "CI/CD pipeline construction",
+            "Monitoring system setup",
+            "Infrastructure as Code"
+          ],
+          "benefits": ["Cloud certification support", "On-call compensation", "Equipment allowance", "Training programs", "Incentive pay"]
+        }
+      ]
+    },
+    "applyButton": "Apply Now",
+    "applicationForm": {
+      "sectionLabel": "Apply",
+      "title": "Submit Your Application",
+      "description": "Fill out your details and we'll get back to you promptly.",
+      "nameLabel": "Name *",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "Your email address",
+      "phoneLabel": "Phone *",
+      "positionLabel": "Position *",
+      "positionPlaceholder": "Select a position",
+      "introductionLabel": "About You *",
+      "introductionPlaceholder": "Tell us about yourself and why you'd like to join HANBIT",
+      "portfolioLabel": "Portfolio URL",
+      "portfolioPlaceholder": "GitHub, personal website, or other URL",
+      "submitButton": "Submit Application"
+    },
+    "modal": {
+      "applyFor": "Apply for {position}",
+      "nameLabel": "Name *",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "Your email address",
+      "phoneLabel": "Phone *",
+      "phonePlaceholder": "Your phone number",
+      "introductionLabel": "About You *",
+      "introductionPlaceholder": "Tell us about yourself and why you'd like to join...",
+      "portfolioLabel": "Portfolio URL",
+      "portfolioPlaceholder": "GitHub, personal website, or other URL",
+      "cancelButton": "Cancel",
+      "submitButton": "Submit Application",
+      "successMessage": "Your application has been submitted successfully. We'll be in touch soon.",
+      "requiredFieldsError": "Please fill in all required fields."
+    }
+  },
+  "Contact": {
+    "hero": {
+      "sectionLabel": "Contact",
+      "title": "Project Consultation",
+      "description": "Let's take the first step toward building the perfect solution together."
+    },
+    "info": [
+      { "label": "Email", "value": "hello@hanbit.dev", "sub": "Response within 24 hours" },
+      { "label": "Phone", "value": "+82 2-1234-5678", "sub": "Mon-Fri 09:00-18:00" },
+      { "label": "Address", "value": "123 Teheran-ro, Gangnam-gu, Seoul", "sub": "HANBIT Building, 10F" },
+      { "label": "Business Hours", "value": "Mon-Fri 09:00 - 18:00", "sub": "Saturday by appointment" }
+    ],
+    "form": {
+      "title": "Request a Free Consultation",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Company name",
+      "nameLabel": "Contact Name *",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "Email address",
+      "phoneLabel": "Phone *",
+      "servicesLabel": "Services of Interest",
+      "serviceOptions": [
+        "AI & Data Solutions",
+        "Web Development",
+        "System Architecture",
+        "Custom Platforms",
+        "Mobile Development",
+        "Consulting"
+      ],
+      "budgetLabel": "Budget Range",
+      "budgetPlaceholder": "Select a range",
+      "budgetOptions": [
+        { "value": "Under $10,000", "label": "Under $10,000" },
+        { "value": "$10,000 - $30,000", "label": "$10,000 - $30,000" },
+        { "value": "$30,000 - $50,000", "label": "$30,000 - $50,000" },
+        { "value": "$50,000 - $100,000", "label": "$50,000 - $100,000" },
+        { "value": "Over $100,000", "label": "Over $100,000" }
+      ],
+      "startDateLabel": "Preferred Start Date",
+      "descriptionLabel": "Project Description *",
+      "descriptionPlaceholder": "Tell us about your project",
+      "submitButton": "Submit Inquiry"
+    },
+    "process": {
+      "sectionLabel": "Process",
+      "steps": [
+        { "step": "01", "title": "Submit Inquiry", "desc": "Fill out our online form or call us directly" },
+        { "step": "02", "title": "Requirements Analysis", "desc": "In-depth analysis of project goals and requirements" },
+        { "step": "03", "title": "Proposal", "desc": "Customized solution and project estimate" },
+        { "step": "04", "title": "Project Kickoff", "desc": "Contract signing and project launch" }
+      ]
+    },
+    "tips": {
+      "title": "Consultation Tips",
+      "items": [
+        "Preparing specific requirements in advance helps us provide a more accurate consultation",
+        "If you have existing systems, please have relevant documentation ready",
+        "Share your approximate budget and timeline expectations"
+      ]
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "items": [
+        {
+          "q": "How long does a typical project take?",
+          "a": "Web development projects typically take 2-4 months, while AI projects take 3-6 months."
+        },
+        {
+          "q": "What about post-launch maintenance?",
+          "a": "We offer 3 months of complimentary support, followed by optional monthly maintenance contracts."
+        },
+        {
+          "q": "Who owns the source code?",
+          "a": "Full source code ownership transfers to the client upon final payment."
+        },
+        {
+          "q": "Do you work with remote teams?",
+          "a": "Yes, we collaborate effectively through regular video calls and collaboration tools."
+        }
+      ]
+    }
+  },
+  "Common": {
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "loading": "Loading...",
+    "requiredFieldsError": "Please fill in all required fields.",
+    "submitError": "An error occurred while submitting. Please try again.",
+    "successMessage": "Submitted successfully."
+  },
+  "Phone": {
+    "validationError": "Invalid format for {country} (e.g., {example})"
+  }
+}

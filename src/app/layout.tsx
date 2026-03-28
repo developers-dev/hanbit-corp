@@ -10,7 +10,7 @@ const sansKR = Noto_Sans_KR({
 
 export const metadata: Metadata = {
   title: "HANBIT — Enterprise IT Solutions",
-  description: "보이지 않는 곳까지, 완벽하게. AI, 클라우드, 웹 플랫폼 전 영역의 엔터프라이즈급 기술 솔루션.",
+  description: "Engineering your competitive edge in technology. Enterprise-grade AI, Cloud, Web Platform solutions.",
 }
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ko" className={`${sansKR.variable} antialiased`}>
+    <html className={`${sansKR.variable} antialiased`}>
       <body className="min-h-screen bg-white text-warm-800 font-sans">
         {children}
       </body>

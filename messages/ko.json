@@ -1,0 +1,717 @@
+{
+  "Nav": {
+    "services": "서비스",
+    "portfolio": "구축 사례",
+    "about": "회사소개",
+    "careers": "채용",
+    "contact": "문의하기",
+    "brand": "HANBIT"
+  },
+  "Footer": {
+    "brand": "HANBIT",
+    "tagline": "보이지 않는 곳까지, 완벽하게.",
+    "taglineSub": "엔터프라이즈급 기술 솔루션 파트너.",
+    "email": "hello@hanbit.dev",
+    "phone": "+82 2-1234-5678",
+    "servicesTitle": "서비스",
+    "serviceLinks": {
+      "aiData": "AI & Data",
+      "webPlatform": "Web Platform",
+      "cloudInfra": "Cloud & Infra",
+      "customSolution": "Custom Solution"
+    },
+    "companyTitle": "회사",
+    "companyLinks": {
+      "about": "회사 소개",
+      "portfolio": "구축 사례",
+      "careers": "채용",
+      "contact": "문의"
+    },
+    "contactTitle": "연락처",
+    "address1": "서울특별시 강남구",
+    "address2": "테헤란로 123",
+    "hours": "평일 09:00 - 18:00",
+    "copyright": "HANBIT Corp. All rights reserved."
+  },
+  "Home": {
+    "hero": {
+      "title": "기업의 기술 경쟁력을 설계합니다",
+      "description": "HANBIT은 AI, 클라우드, 데이터, 플랫폼 전 영역에 걸쳐 국내외 기업의 디지털 전환과 시스템 고도화를 수행하고 있습니다.",
+      "ctaPrimary": "솔루션 도입 문의",
+      "ctaSecondary": "구축 실적 보기"
+    },
+    "trustIndicators": {
+      "label": "주요 고객사 및 파트너",
+      "clients": {
+        "finance": "금융그룹 A사",
+        "manufacturing": "제조 대기업 B사",
+        "retail": "유통 C사",
+        "it": "IT 플랫폼 D사",
+        "public": "공공기관 E기관",
+        "global": "글로벌 F사"
+      }
+    },
+    "metrics": {
+      "projects": {
+        "value": "200+",
+        "label": "누적 프로젝트",
+        "sub": "금융·제조·유통·공공 등"
+      },
+      "availability": {
+        "value": "99.9%",
+        "label": "서비스 가용성",
+        "sub": "SLA 기반 운영 보장"
+      },
+      "experience": {
+        "value": "8년",
+        "label": "업력",
+        "sub": "2019년 설립, 지속 성장"
+      },
+      "engineers": {
+        "value": "30+",
+        "label": "전문 엔지니어",
+        "sub": "분야별 시니어급 인력"
+      }
+    },
+    "industries": {
+      "sectionLabel": "Industries",
+      "title": "산업별 전문 솔루션",
+      "description": "각 산업의 규제 환경, 비즈니스 프로세스, 기술 요구사항에 대한 깊은 이해를 바탕으로 최적화된 솔루션을 제공합니다.",
+      "items": {
+        "finance": {
+          "sector": "금융·핀테크",
+          "desc": "실시간 거래 시스템, 리스크 관리, 규제 준수 플랫폼 구축",
+          "projects": "45건+"
+        },
+        "manufacturing": {
+          "sector": "제조·물류",
+          "desc": "스마트팩토리, 공급망 최적화, 예지보전 시스템 개발",
+          "projects": "38건+"
+        },
+        "retail": {
+          "sector": "유통·커머스",
+          "desc": "옴니채널 플랫폼, AI 추천, 대규모 트래픽 처리 시스템",
+          "projects": "52건+"
+        },
+        "public": {
+          "sector": "공공·교육",
+          "desc": "행정 시스템 현대화, 데이터 포털, 교육 플랫폼 구축",
+          "projects": "28건+"
+        },
+        "healthcare": {
+          "sector": "헬스케어",
+          "desc": "의료 데이터 분석, EMR 연동, 원격 진료 플랫폼 개발",
+          "projects": "15건+"
+        },
+        "media": {
+          "sector": "미디어·콘텐츠",
+          "desc": "콘텐츠 관리 시스템, 실시간 스트리밍, AI 기반 개인화",
+          "projects": "22건+"
+        }
+      }
+    },
+    "capabilities": {
+      "sectionLabel": "Capabilities",
+      "title": "핵심 사업 영역",
+      "viewAll": "전체 서비스 상세 보기",
+      "items": {
+        "aiData": {
+          "num": "01",
+          "title": "AI & Data Intelligence",
+          "desc": "머신러닝 모델 개발부터 MLOps 파이프라인 구축, LLM 파인튜닝, 데이터 레이크 설계까지 데이터 기반 의사결정 체계를 구현합니다.",
+          "tags": ["ML/DL 모델링", "Data Pipeline", "LLM Fine-tuning", "MLOps"]
+        },
+        "webPlatform": {
+          "num": "02",
+          "title": "Enterprise Web Platform",
+          "desc": "대규모 동시접속 처리, 마이크로서비스 아키텍처 기반의 확장 가능한 웹 플랫폼과 백오피스 시스템을 설계·개발합니다.",
+          "tags": ["React/Next.js", "MSA", "실시간 처리", "관리 시스템"]
+        },
+        "cloudInfra": {
+          "num": "03",
+          "title": "Cloud & Infrastructure",
+          "desc": "레거시 시스템 클라우드 마이그레이션, 컨테이너 오케스트레이션, IaC 기반 인프라 자동화, 보안 체계 구축을 수행합니다.",
+          "tags": ["AWS/GCP", "Kubernetes", "Terraform", "CI/CD"]
+        },
+        "customSolution": {
+          "num": "04",
+          "title": "Custom Solution Development",
+          "desc": "E-commerce, CMS, ERP 연동, 모바일 앱 등 비즈니스 요구사항에 최적화된 맞춤형 솔루션을 개발합니다.",
+          "tags": ["E-commerce", "CMS/ERP", "Mobile App", "API 연동"]
+        }
+      }
+    },
+    "projects": {
+      "sectionLabel": "Projects",
+      "title": "대표 구축 실적",
+      "viewAll": "전체 실적 보기",
+      "items": {
+        "aiRisk": {
+          "category": "AI/ML · 금융",
+          "title": "실시간 AI 리스크 분석 시스템",
+          "client": "국내 주요 금융그룹",
+          "results": ["리스크 탐지 정확도 94%", "처리 지연시간 50ms 이하", "연간 손실 방지 효과 120억원"]
+        },
+        "smartFactory": {
+          "category": "Cloud · 제조",
+          "title": "스마트팩토리 클라우드 전환",
+          "client": "매출 5조원 이상 제조 대기업",
+          "results": ["인프라 운영비 40% 절감", "배포 주기 2주 → 1일", "시스템 가용성 99.99%"]
+        },
+        "commerce": {
+          "category": "Platform · 유통",
+          "title": "통합 커머스 플랫폼 구축",
+          "client": "국내 Top 10 유통기업",
+          "results": ["일 주문처리 50만건+", "모바일 전환율 60% 향상", "피크 트래픽 10배 대응"]
+        }
+      }
+    },
+    "differentiators": {
+      "sectionLabel": "Why HANBIT",
+      "title": "HANBIT을 선택하는 이유",
+      "items": {
+        "domain": {
+          "title": "산업별 도메인 전문성",
+          "desc": "금융, 제조, 유통, 공공 등 각 산업의 규제 환경과 비즈니스 프로세스에 대한 깊은 이해를 기반으로 실질적인 솔루션을 제공합니다."
+        },
+        "endToEnd": {
+          "title": "엔드투엔드 기술 역량",
+          "desc": "요구사항 분석부터 설계, 개발, 테스트, 배포, 운영까지 전 단계를 자체 인력으로 수행하여 일관된 품질과 책임을 보장합니다."
+        },
+        "partnership": {
+          "title": "장기적 기술 파트너십",
+          "desc": "단발성 프로젝트가 아닌 지속적인 시스템 고도화와 기술 지원을 통해 고객사의 기술 경쟁력 강화에 기여합니다."
+        }
+      }
+    },
+    "cta": {
+      "title": "기술 과제에 대해 상담받으세요",
+      "description": "담당 엔지니어가 귀사의 환경에 맞는 최적의 아키텍처와 구현 방안을 제안드립니다.",
+      "button": "도입 문의하기"
+    }
+  },
+  "About": {
+    "hero": {
+      "sectionLabel": "About",
+      "title": "우리는 HANBIT입니다",
+      "description": "보이지 않는 곳까지 완벽을 추구하며, 코드로 클라이언트의 비전을 현실로 만드는 개발 스튜디오입니다."
+    },
+    "mission": {
+      "sectionLabel": "Mission",
+      "title": "완벽한 코드, 완벽한 결과",
+      "description": "완벽한 코드와 정밀한 설계로 클라이언트의 비즈니스 성공을 이끌어내는 것이 우리의 사명입니다.",
+      "items": ["코드 품질 100%", "고객 만족 최우선", "지속적인 혁신"]
+    },
+    "vision": {
+      "sectionLabel": "Vision",
+      "title": "기술로 만드는 더 나은 세상",
+      "description": "기술과 창의성을 결합하여 세상을 더 나은 곳으로 만드는 혁신적인 솔루션을 제공합니다.",
+      "items": ["글로벌 기술 리더", "혁신적 솔루션", "지속 가능한 성장"]
+    },
+    "team": {
+      "sectionLabel": "Team",
+      "title": "우리 팀",
+      "members": {
+        "kimTaeHyun": {
+          "name": "김태현",
+          "role": "CEO & Lead Developer",
+          "description": "10년 경력의 풀스택 개발자로, 완벽한 코드에 대한 철학을 가지고 있습니다."
+        },
+        "leeSuJin": {
+          "name": "이수진",
+          "role": "AI/ML Engineer",
+          "description": "데이터 사이언스와 머신러닝 전문가로, 비즈니스 인사이트를 제공합니다."
+        },
+        "parkMinSu": {
+          "name": "박민수",
+          "role": "Frontend Specialist",
+          "description": "사용자 경험에 집중하는 프론트엔드 전문가입니다."
+        },
+        "jungHaYoung": {
+          "name": "정하영",
+          "role": "Backend Engineer",
+          "description": "확장 가능한 백엔드 시스템 설계 전문가입니다."
+        }
+      }
+    },
+    "timeline": {
+      "sectionLabel": "History",
+      "title": "우리의 여정",
+      "items": {
+        "2019": { "event": "HANBIT 설립", "description": "완벽한 코드를 추구하는 개발 스튜디오 시작" },
+        "2020": { "event": "첫 AI 프로젝트", "description": "머신러닝 기반 추천 시스템 개발 성공" },
+        "2021": { "event": "팀 확장", "description": "전문 개발자 4명으로 팀 구성 완료" },
+        "2022": { "event": "대기업 파트너십", "description": "주요 기업들과 장기 계약 체결" },
+        "2023": { "event": "기술 혁신", "description": "LLM 파인튜닝 서비스 출시" },
+        "2024": { "event": "글로벌 진출", "description": "해외 클라이언트 서비스 시작" }
+      }
+    },
+    "values": {
+      "sectionLabel": "Values",
+      "title": "핵심 가치",
+      "items": {
+        "excellence": { "title": "Excellence", "desc": "모든 프로젝트에서 최고의 품질을 추구합니다" },
+        "collaboration": { "title": "Collaboration", "desc": "팀워크와 소통을 통해 최상의 결과를 만듭니다" },
+        "innovation": { "title": "Innovation", "desc": "끊임없는 혁신으로 새로운 가치를 창출합니다" }
+      }
+    },
+    "cta": {
+      "title": "함께 만들어갈 미래",
+      "description": "HANBIT과 함께 완벽한 솔루션을 만들어보세요.",
+      "ctaPrimary": "프로젝트 상담하기",
+      "ctaSecondary": "팀 합류하기"
+    }
+  },
+  "Services": {
+    "hero": {
+      "sectionLabel": "Services",
+      "title": "전문 서비스",
+      "description": "정밀한 기술력과 완벽한 품질로 비즈니스 성공을 이끄는 차별화된 개발 솔루션을 제공합니다."
+    },
+    "items": {
+      "aiData": {
+        "title": "AI & Data Solutions",
+        "subtitle": "지능형 데이터 분석 및 AI 솔루션",
+        "description": "머신러닝, 데이터 사이언스, LLM 파인튜닝을 통해 비즈니스 인사이트를 제공하고 자동화된 의사결정을 지원합니다.",
+        "features": [
+          "데이터 분석 및 시각화 (DA)",
+          "머신러닝 모델 개발 (DS)",
+          "데이터 파이프라인 구축 (DE)",
+          "ML 시스템 운영 (MLE)",
+          "LLM 파인튜닝 및 최적화",
+          "예측 분석 및 추천 시스템"
+        ],
+        "price": "프로젝트별 견적"
+      },
+      "webDev": {
+        "title": "Web Development",
+        "subtitle": "확장 가능한 웹 애플리케이션 개발",
+        "description": "최신 기술 스택을 활용하여 성능과 사용자 경험을 모두 만족시키는 웹 애플리케이션을 구축합니다.",
+        "features": [
+          "React/Next.js 프론트엔드 개발",
+          "Node.js/Python 백엔드 API",
+          "데이터베이스 설계 및 최적화",
+          "반응형 웹 디자인",
+          "성능 최적화 및 SEO",
+          "실시간 기능 구현"
+        ],
+        "price": "월 300만원부터"
+      },
+      "systemArch": {
+        "title": "System Architecture",
+        "subtitle": "견고하고 확장 가능한 시스템 설계",
+        "description": "클라우드 네이티브 아키텍처와 마이크로서비스를 통해 안정적이고 확장 가능한 시스템을 설계합니다.",
+        "features": [
+          "클라우드 인프라 설계",
+          "마이크로서비스 아키텍처",
+          "DevOps 파이프라인 구축",
+          "컨테이너화 및 오케스트레이션",
+          "모니터링 및 로깅 시스템",
+          "보안 및 성능 최적화"
+        ],
+        "price": "컨설팅 시간당 15만원"
+      },
+      "customPlatforms": {
+        "title": "Custom Platforms",
+        "subtitle": "맞춤형 플랫폼 및 솔루션 개발",
+        "description": "비즈니스 요구사항에 완벽히 맞는 맞춤형 플랫폼과 통합 솔루션을 개발합니다.",
+        "features": [
+          "E-commerce 플랫폼 구축",
+          "CMS 및 관리 시스템",
+          "모바일 애플리케이션",
+          "API 통합 및 연동",
+          "레거시 시스템 현대화",
+          "커스텀 비즈니스 로직"
+        ],
+        "price": "프로젝트별 견적"
+      }
+    },
+    "featuresLabel": "주요 기능",
+    "taxNote": "부가세 별도",
+    "consultButton": "상담 문의하기",
+    "process": {
+      "sectionLabel": "Process",
+      "title": "개발 프로세스",
+      "steps": {
+        "01": { "title": "요구사항 분석", "desc": "비즈니스 목표와 기술 요구사항을 정밀하게 분석합니다" },
+        "02": { "title": "설계 및 계획", "desc": "최적의 아키텍처와 개발 계획을 수립합니다" },
+        "03": { "title": "개발 및 구현", "desc": "애자일 방법론으로 단계별 개발을 진행합니다" },
+        "04": { "title": "테스트 및 배포", "desc": "철저한 테스트와 안정적인 배포를 수행합니다" }
+      }
+    },
+    "cta": {
+      "title": "프로젝트를 시작하세요",
+      "description": "무료 상담을 통해 최적의 솔루션을 제안해드립니다.",
+      "ctaPrimary": "무료 상담 신청",
+      "ctaSecondary": "포트폴리오 보기"
+    }
+  },
+  "Portfolio": {
+    "hero": {
+      "sectionLabel": "Portfolio",
+      "title": "완성된 프로젝트",
+      "description": "HANBIT이 완성한 다양한 프로젝트들을 통해 우리의 기술력과 전문성을 확인해보세요."
+    },
+    "projects": {
+      "aiRecommendation": {
+        "title": "AI 추천 시스템",
+        "category": "AI/ML",
+        "client": "이커머스 플랫폼",
+        "duration": "3개월",
+        "team": "4명",
+        "description": "머신러닝 기반 개인화 상품 추천 시스템을 구축하여 구매 전환율을 35% 향상시켰습니다.",
+        "detailedDescription": "대규모 이커머스 플랫폼을 위한 실시간 개인화 추천 시스템을 구축했습니다. 협업 필터링과 콘텐츠 기반 필터링을 결합한 하이브리드 추천 알고리즘을 구현하여 추천 정확도를 크게 향상시켰습니다.",
+        "results": ["구매 전환율 35% 증가", "사용자 체류시간 50% 증가", "매출 25% 향상"],
+        "metrics": {
+          "performance": "99.5% 가용성",
+          "speed": "평균 응답시간 50ms",
+          "accuracy": "추천 정확도 85%"
+        }
+      },
+      "fintechDashboard": {
+        "title": "핀테크 대시보드",
+        "category": "Web Development",
+        "client": "금융 스타트업",
+        "duration": "4개월",
+        "team": "5명",
+        "description": "실시간 금융 데이터 시각화와 거래 관리를 위한 웹 애플리케이션을 개발했습니다.",
+        "detailedDescription": "금융 스타트업을 위한 종합 대시보드 시스템을 구축했습니다. 실시간 주식, 암호화폐, 외환 데이터를 수집하고 시각화하여 사용자가 직관적으로 투자 포트폴리오를 관리할 수 있도록 했습니다.",
+        "results": ["실시간 데이터 처리", "99.9% 가용성", "사용자 만족도 95%"],
+        "metrics": {
+          "users": "DAU 10,000+",
+          "transactions": "일일 거래량 1억원+",
+          "uptime": "99.9% 가동률"
+        }
+      },
+      "cloudMigration": {
+        "title": "클라우드 마이그레이션",
+        "category": "System Architecture",
+        "client": "제조업 대기업",
+        "duration": "6개월",
+        "team": "3명",
+        "description": "레거시 시스템을 AWS 클라우드로 마이그레이션하여 운영비용을 40% 절감했습니다.",
+        "detailedDescription": "20년 된 레거시 시스템을 현대적인 클라우드 아키텍처로 전환했습니다. 마이크로서비스 아키텍처 도입, 컨테이너화, CI/CD 파이프라인 구축을 통해 확장성과 유지보수성을 크게 개선했습니다.",
+        "results": ["운영비용 40% 절감", "배포시간 80% 단축", "시스템 안정성 향상"],
+        "metrics": {
+          "cost": "운영비 40% 절감",
+          "deployment": "배포 2시간 → 20분",
+          "reliability": "99.99% 가용성"
+        }
+      },
+      "mobileCommerce": {
+        "title": "모바일 커머스 앱",
+        "category": "Mobile",
+        "client": "패션 브랜드",
+        "duration": "5개월",
+        "team": "6명",
+        "description": "React Native로 크로스플랫폼 모바일 쇼핑 앱을 개발하여 모바일 매출을 60% 증가시켰습니다.",
+        "detailedDescription": "패션 브랜드를 위한 프리미엄 모바일 쇼핑 경험을 제공하는 앱을 개발했습니다. AR 기술을 활용한 가상 피팅, 개인화된 스타일링 추천 기능으로 차별화된 사용자 경험을 구현했습니다.",
+        "results": ["모바일 매출 60% 증가", "앱스토어 4.8점", "다운로드 10만+"],
+        "metrics": {
+          "downloads": "100,000+",
+          "rating": "4.8/5.0",
+          "retention": "월간 유지율 75%"
+        }
+      },
+      "dataAnalytics": {
+        "title": "데이터 분석 플랫폼",
+        "category": "Data Engineering",
+        "client": "마케팅 에이전시",
+        "duration": "4개월",
+        "team": "4명",
+        "description": "빅데이터 수집, 처리, 분석을 위한 통합 플랫폼을 구축했습니다.",
+        "detailedDescription": "마케팅 캠페인의 효과를 실시간으로 분석하고 최적화할 수 있는 데이터 플랫폼을 구축했습니다. 다양한 소스에서 데이터를 수집하고, 실시간 처리를 통해 인사이트를 제공합니다.",
+        "results": ["데이터 처리량 10배 증가", "분석 시간 70% 단축", "인사이트 정확도 향상"],
+        "metrics": {
+          "data": "일일 1TB+",
+          "speed": "지연시간 < 1초",
+          "accuracy": "예측 정확도 92%"
+        }
+      },
+      "llmChatbot": {
+        "title": "LLM 사내 챗봇",
+        "category": "AI/LLM",
+        "client": "대기업 본사",
+        "duration": "3개월",
+        "team": "3명",
+        "description": "대화형 AI를 활용한 사내 업무 지원 챗봇 시스템을 구축했습니다.",
+        "detailedDescription": "직원들의 다양한 업무 관련 질문에 24시간 즉시 답변하는 지능형 챗봇을 개발했습니다. RAG 기반 정보 검색과 사내 지식 베이스를 결합하여 정확한 정보를 제공합니다.",
+        "results": ["문의 처리시간 80% 단축", "직원 만족도 94%", "업무 효율성 향상"],
+        "metrics": {
+          "questions": "일일 1,500+",
+          "accuracy": "답변 정확도 96%",
+          "response": "응답 2.3초"
+        }
+      }
+    },
+    "modal": {
+      "techStackLabel": "기술 스택",
+      "liveDemo": "라이브 데모 보기"
+    },
+    "stats": {
+      "completedProjects": { "value": "50+", "label": "완료 프로젝트" },
+      "satisfaction": { "value": "100%", "label": "고객 만족도" },
+      "stability": { "value": "99.9%", "label": "시스템 안정성" },
+      "support": { "value": "24/7", "label": "기술 지원" }
+    },
+    "cta": {
+      "title": "다음 프로젝트는 여러분과 함께",
+      "description": "HANBIT의 전문성과 경험을 바탕으로 비즈니스를 성공으로 이끌겠습니다.",
+      "button": "프로젝트 상담하기"
+    }
+  },
+  "Careers": {
+    "hero": {
+      "sectionLabel": "Careers",
+      "title": "함께 성장할\n동료를 찾습니다",
+      "description": "완벽한 코드와 혁신적인 솔루션을 만들어가는 HANBIT에서 함께 도전할 개발자를 기다립니다."
+    },
+    "whyHanbit": {
+      "items": {
+        "workLifeBalance": { "title": "워라밸", "desc": "유연근무제와 재택근무로 일과 삶의 균형" },
+        "growth": { "title": "성장 지원", "desc": "교육비, 컨퍼런스, 도서구입비 지원" },
+        "teamwork": { "title": "팀워크", "desc": "수평적 문화와 열린 소통" },
+        "benefits": { "title": "복리후생", "desc": "경쟁력 있는 연봉과 다양한 복지" }
+      }
+    },
+    "positions": {
+      "sectionLabel": "Open Positions",
+      "title": "채용 포지션",
+      "applyButton": "지원하기",
+      "items": {
+        "seniorFrontend": {
+          "title": "Senior Frontend Developer",
+          "department": "개발팀",
+          "type": "정규직",
+          "location": "서울 강남구",
+          "salary": "6,000만 ~ 8,000만원",
+          "description": "React/Next.js 기반의 프론트엔드 개발을 담당하며, 사용자 경험을 최우선으로 하는 개발자를 찾습니다.",
+          "requirements": [
+            "React/Next.js 3년 이상 경험",
+            "TypeScript 능숙",
+            "반응형 웹 개발 경험",
+            "Git 협업 경험",
+            "UI/UX에 대한 이해"
+          ],
+          "benefits": ["유연근무제", "재택근무", "교육비 지원", "건강검진", "팀 워크샵"]
+        },
+        "backendEngineer": {
+          "title": "Backend Engineer",
+          "department": "개발팀",
+          "type": "정규직",
+          "location": "서울 강남구",
+          "salary": "5,500만 ~ 7,500만원",
+          "description": "확장 가능한 백엔드 시스템을 설계하고 구현하는 엔지니어를 모집합니다.",
+          "requirements": [
+            "Node.js 또는 Python 3년 이상",
+            "데이터베이스 설계 경험",
+            "RESTful API 개발",
+            "클라우드 서비스 경험",
+            "마이크로서비스 아키텍처 이해"
+          ],
+          "benefits": ["성과급", "스톡옵션", "컨퍼런스 참가비", "도서구입비", "점심 제공"]
+        },
+        "aiMlEngineer": {
+          "title": "AI/ML Engineer",
+          "department": "AI팀",
+          "type": "정규직",
+          "location": "서울 강남구",
+          "salary": "7,000만 ~ 9,000만원",
+          "description": "머신러닝 모델 개발과 LLM 파인튜닝을 담당할 AI 엔지니어를 찾습니다.",
+          "requirements": [
+            "Python, TensorFlow/PyTorch 경험",
+            "머신러닝 프로젝트 경험",
+            "데이터 전처리 및 분석",
+            "LLM 파인튜닝 경험 우대",
+            "논문 작성 경험 우대"
+          ],
+          "benefits": ["연구개발비", "논문 발표 지원", "GPU 서버 제공", "학회 참석비", "특허 보상금"]
+        },
+        "devopsEngineer": {
+          "title": "DevOps Engineer",
+          "department": "인프라팀",
+          "type": "정규직",
+          "location": "서울 강남구",
+          "salary": "6,500만 ~ 8,500만원",
+          "description": "클라우드 인프라 구축과 CI/CD 파이프라인 관리를 담당합니다.",
+          "requirements": [
+            "AWS/GCP/Azure 경험",
+            "Docker/Kubernetes 운영",
+            "CI/CD 파이프라인 구축",
+            "모니터링 시스템 구축",
+            "Infrastructure as Code"
+          ],
+          "benefits": ["클라우드 자격증 지원", "온콜 수당", "장비 지원", "교육 과정", "인센티브"]
+        }
+      }
+    },
+    "applicationForm": {
+      "sectionLabel": "Apply",
+      "title": "지원서 작성",
+      "description": "간단한 정보를 입력하시면 빠르게 연락드리겠습니다.",
+      "labels": {
+        "name": "이름 *",
+        "email": "이메일 *",
+        "phone": "연락처 *",
+        "position": "지원 포지션 *",
+        "introduction": "자기소개 *",
+        "portfolio": "포트폴리오 URL"
+      },
+      "placeholders": {
+        "name": "성함을 입력해주세요",
+        "email": "이메일을 입력해주세요",
+        "positionSelect": "포지션을 선택해주세요",
+        "introduction": "간단한 자기소개와 지원 동기를 작성해주세요",
+        "portfolio": "GitHub, 개인 사이트 등의 URL"
+      },
+      "submitButton": "지원서 제출하기",
+      "submitting": "제출 중..."
+    },
+    "modal": {
+      "applyFor": "지원하기",
+      "labels": {
+        "name": "이름 *",
+        "email": "이메일 *",
+        "phone": "연락처 *",
+        "introduction": "자기소개 *",
+        "portfolio": "포트폴리오 URL"
+      },
+      "placeholders": {
+        "name": "성함을 입력해주세요",
+        "email": "이메일을 입력해주세요",
+        "phone": "연락처를 입력해주세요",
+        "introduction": "간단한 자기소개와 지원 동기를 작성해주세요...",
+        "portfolio": "GitHub, 개인 사이트 등의 URL을 입력해주세요"
+      },
+      "cancel": "취소",
+      "submit": "지원서 제출",
+      "submitting": "제출 중..."
+    }
+  },
+  "Contact": {
+    "hero": {
+      "sectionLabel": "Contact",
+      "title": "프로젝트 상담",
+      "description": "완벽한 솔루션을 위한 첫 걸음을 함께 시작하겠습니다."
+    },
+    "info": {
+      "email": { "label": "이메일", "value": "hello@hanbit.dev", "sub": "24시간 내 답변" },
+      "phone": { "label": "전화", "value": "+82 2-1234-5678", "sub": "평일 09:00-18:00" },
+      "address": { "label": "주소", "value": "서울시 강남구 테헤란로 123", "sub": "HANBIT 빌딩 10층" },
+      "hours": { "label": "운영시간", "value": "월-금 09:00 - 18:00", "sub": "토요일 예약 상담 가능" }
+    },
+    "form": {
+      "title": "무료 상담 신청",
+      "labels": {
+        "company": "회사명",
+        "name": "담당자명 *",
+        "email": "이메일 *",
+        "phone": "연락처 *",
+        "services": "관심 서비스",
+        "budget": "예산 범위",
+        "startDate": "희망 시작일",
+        "description": "프로젝트 설명 *"
+      },
+      "placeholders": {
+        "company": "회사명",
+        "name": "성함",
+        "email": "이메일",
+        "description": "프로젝트에 대해 설명해주세요"
+      },
+      "serviceOptions": [
+        "AI & Data Solutions",
+        "Web Development",
+        "System Architecture",
+        "Custom Platforms",
+        "Mobile Development",
+        "Consulting"
+      ],
+      "budgetOptions": {
+        "placeholder": "선택해주세요",
+        "under10m": "1,000만원 미만",
+        "10mTo30m": "1,000 ~ 3,000만원",
+        "30mTo50m": "3,000 ~ 5,000만원",
+        "50mTo100m": "5,000만원 ~ 1억원",
+        "over100m": "1억원 이상"
+      },
+      "submitButton": "상담 신청하기",
+      "submitting": "제출 중..."
+    },
+    "process": {
+      "sectionLabel": "Process",
+      "steps": {
+        "01": { "title": "상담 신청", "desc": "온라인 폼 작성 또는 전화 상담" },
+        "02": { "title": "요구사항 분석", "desc": "프로젝트 목표와 요구사항 상세 분석" },
+        "03": { "title": "제안서 작성", "desc": "맞춤형 솔루션과 견적서 제공" },
+        "04": { "title": "프로젝트 시작", "desc": "계약 체결 후 착수" }
+      }
+    },
+    "tips": {
+      "title": "상담 팁",
+      "items": [
+        "구체적인 요구사항을 미리 정리해주시면 더 정확한 상담이 가능합니다",
+        "기존 시스템이 있다면 관련 자료를 준비해주세요",
+        "예산과 일정에 대한 대략적인 계획을 알려주세요"
+      ]
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "items": {
+        "duration": {
+          "q": "프로젝트 기간은 얼마나 걸리나요?",
+          "a": "웹 개발은 2-4개월, AI 프로젝트는 3-6개월 정도 소요됩니다."
+        },
+        "maintenance": {
+          "q": "개발 후 유지보수는?",
+          "a": "3개월 무상 A/S 후, 월 단위 유지보수 계약으로 지속 지원합니다."
+        },
+        "sourceCode": {
+          "q": "소스코드 소유권은?",
+          "a": "최종 결제 완료 시점에 모든 소스코드의 소유권이 고객에게 이전됩니다."
+        },
+        "remote": {
+          "q": "원격 개발이 가능한가요?",
+          "a": "네, 정기적인 화상회의와 협업 도구를 통해 효율적으로 진행합니다."
+        }
+      }
+    }
+  },
+  "Common": {
+    "submit": "제출하기",
+    "submitting": "제출 중...",
+    "loading": "로딩 중...",
+    "required": "필수 항목을 모두 입력해주세요.",
+    "errorGeneric": "전송 중 오류가 발생했습니다. 다시 시도해주세요.",
+    "consultationSuccess": "상담 신청이 성공적으로 제출되었습니다. 24시간 내에 연락드리겠습니다.",
+    "consultationError": "상담 신청 중 오류가 발생했습니다. 다시 시도해주세요.",
+    "applicationSuccess": "지원서가 성공적으로 제출되었습니다. 빠른 시일 내에 연락드리겠습니다.",
+    "applicationError": "지원서 제출 중 오류가 발생했습니다. 다시 시도해주세요.",
+    "currency": {
+      "won": "원",
+      "manWon": "만원",
+      "ukWon": "억원"
+    },
+    "units": {
+      "month": "개월",
+      "person": "명",
+      "case": "건"
+    },
+    "emailLabels": {
+      "newConsultation": "새로운 프로젝트 상담 문의가 도착했습니다",
+      "newApplication": "새로운 채용 지원서가 도착했습니다",
+      "customerInfo": "고객 정보",
+      "applicantInfo": "지원자 정보",
+      "interestedServices": "관심 서비스",
+      "projectDescription": "프로젝트 설명",
+      "selfIntroduction": "자기소개",
+      "consultationAutoEmail": "이 메일은 HANBIT 상담 시스템에서 자동으로 발송되었습니다.",
+      "careerAutoEmail": "이 메일은 HANBIT 채용 시스템에서 자동으로 발송되었습니다."
+    }
+  },
+  "Phone": {
+    "validationError": "{country} 형식에 맞지 않습니다 (예: {example})",
+    "countries": {
+      "KR": "대한민국"
+    }
+  }
+}
