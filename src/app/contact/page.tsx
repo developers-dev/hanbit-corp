@@ -6,6 +6,7 @@ import { ArrowRight, Loader2 } from "lucide-react"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import { submitConsultation } from "../actions/contact-actions"
+import PhoneInput from "../components/phone-input"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -147,12 +148,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2 text-warm-800">연락처 *</label>
-                    <input
-                      name="phone"
-                      required
-                      className="w-full px-4 py-3 rounded-lg text-[15px] outline-none transition-colors bg-warm-50 border-[1.5px] border-warm-300 text-warm-800 focus:border-navy"
-                      placeholder="연락처"
-                    />
+                    <PhoneInput name="phone" required />
                   </div>
                 </div>
 
