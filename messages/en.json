@@ -11,8 +11,8 @@
     "brand": "HANBIT",
     "tagline": "Perfection in every detail.",
     "taglineSub": "Your enterprise technology partner.",
-    "email": "hello@hanbit.dev",
-    "phone": "+82 2-1234-5678",
+    "email": "hanbit@hanbit.xyz",
+    "phone": "+82-1670-0247",
     "servicesTitle": "Services",
     "serviceLinks": {
       "aiData": "AI & Data",
@@ -28,10 +28,12 @@
       "contact": "Contact"
     },
     "contactTitle": "Contact",
-    "address1": "Gangnam-gu, Seoul",
-    "address2": "123 Teheran-ro",
+    "address1": "14-2, Pangyoyeok-ro 192beon-gil, Bundang-gu",
+    "address2": "Gold Tower #914-D30, Seongnam-si, Gyeonggi-do",
     "hours": "Mon-Fri 09:00 - 18:00",
-    "copyright": "HANBIT Corp. All rights reserved."
+    "copyright": "HANBIT Co., Ltd. All rights reserved.",
+    "corpInfo": "CEO: Jinhan Kim | Business Reg: 506-87-03016",
+    "corpInfo2": "E-commerce Reg: 2023-Seongnam Bundang A-1161"
   },
   "Home": {
     "hero": {
@@ -495,7 +497,7 @@
           "title": "Senior Frontend Developer",
           "department": "Engineering",
           "type": "Full-time",
-          "location": "Gangnam-gu, Seoul",
+          "location": "Bundang-gu, Seongnam (Pangyo)",
           "salary": "$50K - $67K",
           "description": "We're looking for a developer who puts user experience first and builds frontend applications with React/Next.js.",
           "requirements": [
@@ -511,7 +513,7 @@
           "title": "Backend Engineer",
           "department": "Engineering",
           "type": "Full-time",
-          "location": "Gangnam-gu, Seoul",
+          "location": "Bundang-gu, Seongnam (Pangyo)",
           "salary": "$46K - $63K",
           "description": "We're hiring an engineer to design and implement scalable backend systems.",
           "requirements": [
@@ -527,7 +529,7 @@
           "title": "AI/ML Engineer",
           "department": "AI Team",
           "type": "Full-time",
-          "location": "Gangnam-gu, Seoul",
+          "location": "Bundang-gu, Seongnam (Pangyo)",
           "salary": "$58K - $75K",
           "description": "We're looking for an AI engineer to lead machine learning model development and LLM fine-tuning.",
           "requirements": [
@@ -543,7 +545,7 @@
           "title": "DevOps Engineer",
           "department": "Infrastructure",
           "type": "Full-time",
-          "location": "Gangnam-gu, Seoul",
+          "location": "Bundang-gu, Seongnam (Pangyo)",
           "salary": "$54K - $71K",
           "description": "Responsible for cloud infrastructure deployment and CI/CD pipeline management.",
           "requirements": [
@@ -607,9 +609,9 @@
       "description": "Let's take the first step toward building the perfect solution together."
     },
     "info": {
-      "email": { "label": "Email", "value": "hello@hanbit.dev", "sub": "Response within 24 hours" },
-      "phone": { "label": "Phone", "value": "+82 2-1234-5678", "sub": "Mon-Fri 09:00-18:00" },
-      "address": { "label": "Address", "value": "123 Teheran-ro, Gangnam-gu, Seoul", "sub": "HANBIT Building, 10F" },
+      "email": { "label": "Email", "value": "hanbit@hanbit.xyz", "sub": "Response within 24 hours" },
+      "phone": { "label": "Phone", "value": "+82-1670-0247", "sub": "Mon-Fri 09:00-18:00" },
+      "address": { "label": "Address", "value": "14-2, Pangyoyeok-ro 192beon-gil, Bundang-gu", "sub": "Gold Tower #914-D30, Seongnam" },
       "hours": { "label": "Business Hours", "value": "Mon-Fri 09:00 - 18:00", "sub": "Saturday by appointment" }
     },
     "form": {

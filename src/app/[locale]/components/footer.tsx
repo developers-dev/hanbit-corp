@@ -55,8 +55,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6 border-t border-white/10 text-xs text-warm-600">
-          &copy; {new Date().getFullYear()} {t("copyright")}
+        <div className="py-6 border-t border-white/10 text-xs text-warm-600 space-y-1">
+          <div>{t("corpInfo")}</div>
+          <div>{t("corpInfo2")}</div>
+          <div>&copy; {new Date().getFullYear()} {t("copyright")}</div>
         </div>
       </div>
     </footer>
