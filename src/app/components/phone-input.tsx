@@ -55,16 +55,6 @@ const countries = [
   { code: "UA", dial: "+380", name: "Україна", pattern: /^0\d{9}$/, placeholder: "067 123 4567" },
 ]
 
-const flagEmojis: Record<string, string> = {
-  KR: "🇰🇷", US: "🇺🇸", GB: "🇬🇧", JP: "🇯🇵", CN: "🇨🇳", DE: "🇩🇪", FR: "🇫🇷", AU: "🇦🇺",
-  CA: "🇨🇦", IN: "🇮🇳", BR: "🇧🇷", MX: "🇲🇽", RU: "🇷🇺", IT: "🇮🇹", ES: "🇪🇸", NL: "🇳🇱",
-  SE: "🇸🇪", CH: "🇨🇭", SG: "🇸🇬", HK: "🇭🇰", TW: "🇹🇼", TH: "🇹🇭", VN: "🇻🇳", PH: "🇵🇭",
-  MY: "🇲🇾", ID: "🇮🇩", AE: "🇦🇪", SA: "🇸🇦", IL: "🇮🇱", TR: "🇹🇷", PL: "🇵🇱", ZA: "🇿🇦",
-  NG: "🇳🇬", EG: "🇪🇬", KE: "🇰🇪", AR: "🇦🇷", CL: "🇨🇱", CO: "🇨🇴", PE: "🇵🇪", NZ: "🇳🇿",
-  AT: "🇦🇹", BE: "🇧🇪", DK: "🇩🇰", FI: "🇫🇮", NO: "🇳🇴", PT: "🇵🇹", IE: "🇮🇪", CZ: "🇨🇿",
-  RO: "🇷🇴", UA: "🇺🇦",
-}
-
 export default function PhoneInput({ name = "phone", required = false }: { name?: string; required?: boolean }) {
   const [country, setCountry] = useState("KR")
   const [phone, setPhone] = useState("")
@@ -100,7 +90,7 @@ export default function PhoneInput({ name = "phone", required = false }: { name?
         >
           {countries.map((c) => (
             <option key={c.code} value={c.code}>
-              {flagEmojis[c.code]} {c.dial} {c.name}
+              {c.dial} {c.name}
             </option>
           ))}
         </select>
