@@ -65,9 +65,9 @@
         "sub": "SLA 기반 운영 보장"
       },
       "experience": {
-        "value": "8년",
+        "value": "3년",
         "label": "업력",
-        "sub": "2019년 설립, 지속 성장"
+        "sub": "2023년 설립, 빠른 성장"
       },
       "engineers": {
         "value": "30+",
@@ -253,12 +253,10 @@
       "sectionLabel": "History",
       "title": "우리의 여정",
       "items": {
-        "2019": { "event": "HANBIT 설립", "description": "완벽한 코드를 추구하는 개발 스튜디오 시작" },
-        "2020": { "event": "첫 AI 프로젝트", "description": "머신러닝 기반 추천 시스템 개발 성공" },
-        "2021": { "event": "팀 확장", "description": "전문 개발자 4명으로 팀 구성 완료" },
-        "2022": { "event": "대기업 파트너십", "description": "주요 기업들과 장기 계약 체결" },
-        "2023": { "event": "기술 혁신", "description": "LLM 파인튜닝 서비스 출시" },
-        "2024": { "event": "글로벌 진출", "description": "해외 클라이언트 서비스 시작" }
+        "2023": { "event": "한비트 설립", "description": "AI/데이터 전문 개발 스튜디오 시작" },
+        "2024": { "event": "첫 AI 프로젝트 수주", "description": "KT CS 콜드리드 생성 및 개인화 프로젝트" },
+        "2025": { "event": "마케팅 프로그램 수주", "description": "유튜브 뷰 프로그램, 네이버 스토어 프로그램 개발" },
+        "2026": { "event": "팀 확장", "description": "전문 엔지니어 및 자문위원 영입으로 조직 강화" }
       }
     },
     "values": {

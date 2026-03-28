@@ -65,9 +65,9 @@
         "sub": "SLA-backed uptime guarantee"
       },
       "experience": {
-        "value": "8 yrs",
+        "value": "3 yrs",
         "label": "In Business",
-        "sub": "Founded 2019, consistently growing"
+        "sub": "Founded 2023, rapid growth"
       },
       "engineers": {
         "value": "30+",
@@ -265,12 +265,10 @@
       "sectionLabel": "History",
       "title": "Our Journey",
       "items": {
-        "2019": { "event": "HANBIT Founded", "description": "Launched as a development studio committed to engineering excellence" },
-        "2020": { "event": "First AI Project", "description": "Successfully developed an ML-based recommendation system" },
-        "2021": { "event": "Team Expansion", "description": "Grew to a team of 4 specialized developers" },
-        "2022": { "event": "Enterprise Partnerships", "description": "Secured long-term contracts with major corporations" },
-        "2023": { "event": "Technology Innovation", "description": "Launched LLM fine-tuning services" },
-        "2024": { "event": "Global Expansion", "description": "Began serving international clients" }
+        "2023": { "event": "HANBIT Founded", "description": "Launched as an AI/data-focused development studio" },
+        "2024": { "event": "First AI Project", "description": "KT CS cold lead generation and personalization project" },
+        "2025": { "event": "Marketing Programs", "description": "YouTube view program and Naver Store program development" },
+        "2026": { "event": "Team Expansion", "description": "Strengthened organization with expert engineers and advisory board" }
       }
     },
     "values": {

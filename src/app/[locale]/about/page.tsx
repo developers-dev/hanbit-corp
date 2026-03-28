@@ -17,7 +17,7 @@ export default function AboutPage() {
     jungHaYoung: ["Node.js", "Database", "Cloud"],
   }
 
-  const timelineYears = ["2019", "2020", "2021", "2022", "2023", "2024"] as const
+  const timelineYears = ["2023", "2024", "2025", "2026"] as const
 
   const valueKeys = ["excellence", "collaboration", "innovation"] as const
 
