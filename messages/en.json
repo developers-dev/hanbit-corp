@@ -590,7 +590,9 @@
         "portfolio": "GitHub, personal website, or other URL"
       },
       "submitButton": "Submit Application",
-      "submitting": "Submitting..."
+      "submitting": "Submitting...",
+      "requiredError": "Please fill in all required fields.",
+      "submitError": "An error occurred. Please try again."
     },
     "modal": {
       "applyFor": "Apply for {position}",
