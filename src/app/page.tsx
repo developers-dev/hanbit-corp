@@ -11,7 +11,7 @@ export default function HomePage() {
 
   const testimonials = [
     { text: "HANBIT의 정밀한 개발 프로세스 덕분에 완벽한 결과물을 얻을 수 있었습니다.", author: "김민수", company: "테크스타트업 CEO" },
-    { text: "한 비트도 놓치지 않는 꼼꼼함으로 우리 비즈니스를 성공으로 이끌어주었습니다.", author: "이지영", company: "이커머스 대표" },
+    { text: "보이지 않는 곳까지 신경 쓰는 꼼꼼함으로 우리 비즈니스를 성공으로 이끌어주었습니다.", author: "이지영", company: "이커머스 대표" },
     { text: "기술적 전문성과 비즈니스 이해도를 모두 갖춘 최고의 파트너입니다.", author: "박준호", company: "핀테크 CTO" },
   ]
 
@@ -41,14 +41,14 @@ export default function HomePage() {
               Every Bit Matters
             </p>
             <h1 className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.15] mb-8 font-serif font-bold text-navy">
-              한 비트의 차이가
+              보이지 않는 곳까지,
               <br />
-              결과를 바꿉니다
+              완벽하게
             </h1>
             <div className="w-12 h-0.5 bg-copper mb-8" />
             <p className="text-lg leading-relaxed mb-12 max-w-[540px] text-warm-600">
-              정밀한 기술력과 깊은 비즈니스 이해를 바탕으로, 단 하나의 비트도 소홀히 하지 않는
-              개발 파트너십을 제공합니다.
+              코드 한 줄, 아키텍처 한 겹까지
+              타협 없는 개발 파트너십을 약속합니다.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -130,7 +130,7 @@ export default function HomePage() {
               <p className="text-sm font-medium tracking-widest uppercase mb-4 text-copper">Philosophy</p>
               <h2 className="text-[clamp(2rem,3.5vw,2.75rem)] mb-8 font-serif font-bold text-navy">우리의 개발 철학</h2>
               <p className="text-lg text-warm-600 leading-relaxed mb-8">
-                단 하나의 비트도 허투루 다루지 않는 정밀함으로, 완벽한 솔루션을 만들어갑니다.
+                보이지 않는 곳까지 타협하지 않는 정밀함으로, 완벽한 솔루션을 만들어갑니다.
               </p>
 
               {/* Code preview */}

@@ -16,7 +16,7 @@ const serifKR = Noto_Serif_KR({
 
 export const metadata: Metadata = {
   title: "HANBIT — Every Bit Matters",
-  description: "한 비트의 차이가 결과를 바꿉니다. AI, 웹, 시스템 아키텍처 전문 개발 스튜디오.",
+  description: "보이지 않는 곳까지, 완벽하게. AI, 웹, 시스템 아키텍처 전문 개발 스튜디오 HANBIT.",
 }
 
 export default function RootLayout({

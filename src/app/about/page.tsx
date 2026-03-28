@@ -58,7 +58,7 @@ export default function AboutPage() {
             </h1>
             <div className="w-12 h-0.5 bg-copper mb-8" />
             <p className="text-lg leading-relaxed text-warm-600">
-              단 하나의 비트도 소중히 여기며, 완벽한 코드로 클라이언트의 꿈을 현실로 만드는 개발 스튜디오입니다.
+              보이지 않는 곳까지 완벽을 추구하며, 코드로 클라이언트의 비전을 현실로 만드는 개발 스튜디오입니다.
             </p>
           </div>
         </div>

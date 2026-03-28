@@ -13,9 +13,9 @@ export default function Footer() {
               <span className="w-1.5 h-1.5 rounded-full inline-block mb-0.5 ml-0.5 bg-copper" />
             </div>
             <p className="text-[15px] leading-relaxed max-w-sm mb-6 text-warm-500">
-              한 비트의 차이가 결과를 바꿉니다.
+              보이지 않는 곳까지, 완벽하게.
               <br />
-              정밀한 기술력으로 비즈니스 성공을 이끕니다.
+              타협 없는 개발 파트너십을 약속합니다.
             </p>
             <p className="text-sm text-warm-600">
               &copy; {new Date().getFullYear()} HANBIT. All rights reserved.
