@@ -47,7 +47,7 @@ export default function Navigation({ transparent = false }: { transparent?: bool
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <span className={`text-lg font-bold tracking-tight ${isDark ? "text-navy" : "text-white"}`}>
+            <span className={`text-lg font-light tracking-[0.35em] font-mono ${isDark ? "text-warm-800" : "text-white"}`}>
               HANBIT
             </span>
           </Link>

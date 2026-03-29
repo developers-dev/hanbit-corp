@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Main Footer */}
         <div className="grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 py-16">
           <div>
-            <span className="text-lg font-bold text-white block mb-4">{t("brand")}</span>
+            <span className="text-lg font-light tracking-[0.35em] font-mono text-white block mb-4">{t("brand")}</span>
             <p className="text-sm leading-relaxed max-w-xs mb-6 text-warm-600">
               {t("tagline")}
               <br />

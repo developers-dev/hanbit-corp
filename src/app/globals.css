@@ -4,39 +4,39 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Enterprise Dark */
-  --color-navy: #191F28;
-  --color-navy-light: #333D4B;
-  --color-navy-dark: #0F1317;
+  /* Brand — HANBIT BI */
+  --color-navy: #0D1B2A;
+  --color-navy-light: #1B2D42;
+  --color-navy-dark: #060E17;
 
-  /* Corporate Blue */
-  --color-copper: #0066FF;
-  --color-copper-light: #3385FF;
-  --color-copper-bg: #EBF3FF;
+  --color-copper: #C8B090;
+  --color-copper-light: #D4C0A0;
+  --color-copper-bg: #F5F0E8;
 
   /* Neutral Scale */
   --color-warm-50: #FFFFFF;
-  --color-warm-100: #F7F8FA;
-  --color-warm-200: #F2F3F5;
-  --color-warm-300: #E5E8EB;
-  --color-warm-400: #B0B8C1;
-  --color-warm-500: #8B95A1;
-  --color-warm-600: #6B7684;
-  --color-warm-700: #4E5968;
-  --color-warm-800: #333D4B;
-  --color-warm-900: #191F28;
+  --color-warm-100: #F5F3F0;
+  --color-warm-200: #E6E2DC;
+  --color-warm-300: #D5D0C8;
+  --color-warm-400: #B0A898;
+  --color-warm-500: #999;
+  --color-warm-600: #666;
+  --color-warm-700: #444;
+  --color-warm-800: #1A1A1A;
+  --color-warm-900: #0D0D0D;
 
-  --color-warm-border: #E5E8EB;
+  --color-warm-border: #E6E2DC;
 
   /* Fonts */
-  --font-sans: var(--font-sans-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: var(--font-sans-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: var(--font-sans-kr), 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: var(--font-sans-kr), 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-mono-ibm), 'IBM Plex Mono', monospace;
 }
 
 @layer base {
   ::selection {
     background-color: var(--color-copper);
-    color: #ffffff;
+    color: var(--color-warm-800);
   }
 
   body {
@@ -47,8 +47,8 @@
 
   h1, h2, h3 {
     font-family: var(--font-sans);
-    color: var(--color-navy);
-    letter-spacing: -0.03em;
+    color: var(--color-warm-800);
+    letter-spacing: -0.02em;
     line-height: 1.3;
   }
 }

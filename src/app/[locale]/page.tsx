@@ -33,7 +33,7 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-copper hover:bg-copper-light text-white px-7 py-3 rounded font-semibold text-[14px] transition-colors"
+                className="inline-flex items-center gap-2 bg-copper hover:bg-copper-light text-warm-800 px-7 py-3 rounded font-medium text-[14px] transition-colors"
               >
                 {t("hero.ctaPrimary")}
                 <ArrowRight className="w-4 h-4" />

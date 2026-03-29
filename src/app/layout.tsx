@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Noto_Sans_KR } from "next/font/google"
+import { Noto_Sans_KR, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google"
 import "./globals.css"
 
 const sansKR = Noto_Sans_KR({
@@ -8,9 +8,21 @@ const sansKR = Noto_Sans_KR({
   weight: ["300", "400", "500", "700"],
 })
 
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-plex-sans",
+  weight: ["200", "300", "400", "500", "600"],
+})
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono-ibm",
+  weight: ["200", "300", "400", "500"],
+})
+
 export const metadata: Metadata = {
-  title: "HANBIT — Enterprise IT Solutions",
-  description: "Engineering your competitive edge in technology. Enterprise-grade AI, Cloud, Web Platform solutions.",
+  title: "HANBIT — One Bit Changes Everything",
+  description: "Enterprise IT Solutions. AI, Cloud, Web Platform. One bit changes everything.",
 }
 
 export default function RootLayout({
@@ -19,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className={`${sansKR.variable} antialiased`} suppressHydrationWarning>
-      <body className="min-h-screen bg-white text-warm-800 font-sans">
+    <html className={`${sansKR.variable} ${plexSans.variable} ${plexMono.variable} antialiased`} suppressHydrationWarning>
+      <body className="min-h-screen bg-warm-50 text-warm-800 font-sans">
         {children}
       </body>
     </html>

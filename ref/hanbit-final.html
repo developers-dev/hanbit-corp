@@ -1,0 +1,474 @@
+<!-- /mnt/user-data/outputs/hanbit-final.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanbit — Brand Identity System</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&family=IBM+Plex+Sans:wght@200;300;400;500;600&family=Outfit:wght@200;300;400;500&family=Noto+Sans+KR:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:#f5f3f0;
+            --card:#fff;
+            --border:#e6e2dc;
+            --text:#1a1a1a;
+            --muted:#999;
+            --dim:#ccc;
+            --gold:#c8b090;
+            --gold-dark:#a08060;
+            --navy:#0d1b2a;
+        }
+        * { margin:0; padding:0; box-sizing:border-box }
+        body { background:var(--bg); color:var(--text); font-family:'IBM Plex Sans','Noto Sans KR',sans-serif; min-height:100vh; font-weight:300 }
+
+        /* ---- Hero ---- */
+        .hero {
+            background:#1a1a1a;
+            padding:80px 40px;
+            text-align:center;
+        }
+        .hero-logo {
+            font-family:'IBM Plex Mono',monospace;
+            font-size:64px;
+            font-weight:300;
+            letter-spacing:18px;
+            color:white;
+        }
+        .hero-sub {
+            margin-top:20px;
+            font-family:'IBM Plex Mono',monospace;
+            font-size:11px;
+            font-weight:300;
+            letter-spacing:6px;
+            color:#555;
+            text-transform:uppercase;
+        }
+
+        /* ---- Section ---- */
+        .section {
+            max-width:960px;
+            margin:0 auto;
+            padding:48px 28px 0;
+        }
+        .section-label {
+            font-family:'DM Mono',monospace;
+            font-size:9px;
+            letter-spacing:5px;
+            color:var(--dim);
+            text-transform:uppercase;
+            margin-bottom:20px;
+        }
+        .section-desc {
+            font-size:13px;
+            color:var(--muted);
+            line-height:1.7;
+            margin-bottom:24px;
+            max-width:560px;
+        }
+
+        /* ---- Cards ---- */
+        .card {
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            overflow:hidden;
+            margin-bottom:16px;
+        }
+
+        /* ---- Primary Logo Sizes ---- */
+        .size-grid {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:16px;
+        }
+        .size-box {
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:40px 24px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            gap:16px;
+        }
+        .size-label {
+            font-family:'DM Mono',monospace;
+            font-size:9px;
+            color:var(--dim);
+            letter-spacing:2px;
+        }
+
+        /* ---- Color Backgrounds ---- */
+        .bg-grid {
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:2px;
+            border-radius:16px;
+            overflow:hidden;
+        }
+        .bg-box {
+            height:160px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            gap:12px;
+        }
+        .bg-hex {
+            font-family:'DM Mono',monospace;
+            font-size:9px;
+            letter-spacing:1px;
+            opacity:0.5;
+        }
+
+        /* ---- Lockups ---- */
+        .lockup-grid {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:16px;
+        }
+        .lockup-box {
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:36px 28px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            gap:8px;
+        }
+        .lockup-box.dark {
+            background:#1a1a1a;
+            border-color:#333;
+        }
+
+        /* ---- App Icons ---- */
+        .icon-grid {
+            display:flex;
+            gap:20px;
+            align-items:end;
+        }
+        .icon-wrap {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:8px;
+        }
+        .app-icon {
+            border-radius:22%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-family:'IBM Plex Mono',monospace;
+            font-weight:300;
+        }
+
+        /* ---- Spacing Guide ---- */
+        .space-demo {
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:48px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+        }
+        .space-box {
+            position:relative;
+            display:inline-block;
+        }
+        .space-mark {
+            position:absolute;
+            border:1px dashed var(--gold);
+            opacity:0.5;
+        }
+
+        /* ---- Business Card Mockup ---- */
+        .bizcard-grid {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:16px;
+        }
+        .bizcard {
+            border-radius:12px;
+            padding:36px 32px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            height:200px;
+            border:1px solid var(--border);
+        }
+        .bizcard.front {
+            background:#1a1a1a;
+            border-color:#333;
+        }
+        .bizcard.back {
+            background:white;
+        }
+        .biz-name {
+            font-family:'IBM Plex Sans',sans-serif;
+            font-weight:400;
+            font-size:14px;
+        }
+        .biz-info {
+            font-family:'IBM Plex Mono',monospace;
+            font-size:10px;
+            font-weight:300;
+            line-height:1.8;
+            letter-spacing:0.5px;
+        }
+
+        .footer {
+            text-align:center;
+            padding:56px 28px;
+            font-family:'DM Mono',monospace;
+            font-size:9px;
+            color:var(--dim);
+            letter-spacing:3px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+    <div class="hero-logo">HANBIT</div>
+    <div class="hero-sub">Brand Identity System</div>
+</div>
+
+<!-- ===== PRIMARY LOGO ===== -->
+<div class="section">
+    <div class="section-label">01 — Primary Wordmark</div>
+    <div class="section-desc">IBM Plex Mono Light, letter-spacing 18px. 모노스페이스의 정직함 위에 Light 웨이트의 우아함. 넓은 자간이 각 글자에 존재감을 부여합니다.</div>
+
+    <div class="size-grid">
+        <div class="size-box">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:48px;font-weight:300;letter-spacing:16px;color:#1a1a1a">HANBIT</span>
+            <span class="size-label">PRIMARY — 48px</span>
+        </div>
+        <div class="size-box">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:300;letter-spacing:14px;color:#1a1a1a">HANBIT</span>
+            <span class="size-label">SECONDARY — 32px</span>
+        </div>
+        <div class="size-box">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:300;letter-spacing:12px;color:#1a1a1a">HANBIT</span>
+            <span class="size-label">COMPACT — 20px</span>
+        </div>
+        <div class="size-box">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:400;letter-spacing:8px;color:#1a1a1a">HANBIT</span>
+            <span class="size-label">MICRO — 13px (Regular weight)</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== COLOR SYSTEM ===== -->
+<div class="section">
+    <div class="section-label">02 — Color Applications</div>
+    <div class="section-desc">4가지 핵심 배경에서의 워드마크. 어디서든 선명하게 읽히면서 톤을 유지합니다.</div>
+
+    <div class="bg-grid">
+        <div class="bg-box" style="background:white">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:300;letter-spacing:10px;color:#1a1a1a">HANBIT</span>
+            <span class="bg-hex" style="color:#1a1a1a">#FFFFFF</span>
+        </div>
+        <div class="bg-box" style="background:#1a1a1a">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:300;letter-spacing:10px;color:white">HANBIT</span>
+            <span class="bg-hex" style="color:white">#1A1A1A</span>
+        </div>
+        <div class="bg-box" style="background:var(--gold)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:300;letter-spacing:10px;color:white">HANBIT</span>
+            <span class="bg-hex" style="color:white">#C8B090</span>
+        </div>
+        <div class="bg-box" style="background:var(--navy)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:300;letter-spacing:10px;color:#c8ddf0">HANBIT</span>
+            <span class="bg-hex" style="color:#c8ddf0">#0D1B2A</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== LOCKUP VARIATIONS ===== -->
+<div class="section">
+    <div class="section-label">03 — Lockup Variations</div>
+    <div class="section-desc">태그라인, 한글 표기, 서브 브랜드 결합시의 레이아웃.</div>
+
+    <div class="lockup-grid">
+        <!-- Wordmark + tagline -->
+        <div class="lockup-box">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:300;letter-spacing:14px;color:#1a1a1a">HANBIT</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:300;letter-spacing:5px;color:var(--muted)">ONE BIT CHANGES EVERYTHING</span>
+        </div>
+        <!-- Korean lockup -->
+        <div class="lockup-box">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:300;letter-spacing:14px;color:#1a1a1a">HANBIT</span>
+            <span style="font-family:'Noto Sans KR',sans-serif;font-size:11px;font-weight:300;letter-spacing:8px;color:var(--muted)">한비트</span>
+        </div>
+        <!-- Dark + tagline -->
+        <div class="lockup-box dark">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:300;letter-spacing:14px;color:white">HANBIT</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:300;letter-spacing:5px;color:#555">ONE BIT CHANGES EVERYTHING</span>
+        </div>
+        <!-- Stacked vertical -->
+        <div class="lockup-box dark">
+            <div style="text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:200;letter-spacing:10px;color:#555;margin-bottom:10px">한비트</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:300;letter-spacing:14px;color:white">HANBIT</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== APP ICON ===== -->
+<div class="section">
+    <div class="section-label">04 — App Icon & Favicon</div>
+    <div class="section-desc">축소 사용시 "Hb" 또는 "H" 모노그램으로 전환. 같은 서체, 같은 웨이트.</div>
+
+    <div class="card" style="padding:40px;display:flex;justify-content:center">
+        <div class="icon-grid">
+            <!-- Large -->
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:96px;height:96px;background:#1a1a1a;font-size:36px;letter-spacing:2px;color:white">Hb</div>
+                <span class="size-label">96px</span>
+            </div>
+            <!-- Medium -->
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:64px;height:64px;background:#1a1a1a;font-size:24px;letter-spacing:1px;color:white">Hb</div>
+                <span class="size-label">64px</span>
+            </div>
+            <!-- Small -->
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:44px;height:44px;background:#1a1a1a;font-size:17px;letter-spacing:0px;color:white">Hb</div>
+                <span class="size-label">44px</span>
+            </div>
+            <!-- Favicon -->
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:32px;height:32px;background:#1a1a1a;font-size:15px;letter-spacing:0px;color:white">H</div>
+                <span class="size-label">32px</span>
+            </div>
+            <!-- Separator -->
+            <div style="width:1px;height:80px;background:var(--border);margin:0 12px"></div>
+            <!-- Gold variants -->
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:64px;height:64px;background:var(--gold);font-size:24px;letter-spacing:1px;color:white">Hb</div>
+                <span class="size-label">GOLD</span>
+            </div>
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:64px;height:64px;background:white;border:1px solid var(--border);font-size:24px;letter-spacing:1px;color:#1a1a1a">Hb</div>
+                <span class="size-label">LIGHT</span>
+            </div>
+            <div class="icon-wrap">
+                <div class="app-icon" style="width:64px;height:64px;background:var(--navy);font-size:24px;letter-spacing:1px;color:#c8ddf0">Hb</div>
+                <span class="size-label">NAVY</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CLEAR SPACE ===== -->
+<div class="section">
+    <div class="section-label">05 — Clear Space Rule</div>
+    <div class="section-desc">로고 주변 최소 여백 = "H"의 너비. 이 공간 안에 다른 요소가 침범하지 않습니다.</div>
+
+    <div class="space-demo">
+        <div class="space-box">
+            <!-- The H-width markers -->
+            <div class="space-mark" style="top:-32px;left:0;right:0;height:32px;border-bottom:none"></div>
+            <div class="space-mark" style="bottom:-32px;left:0;right:0;height:32px;border-top:none"></div>
+            <div class="space-mark" style="top:-32px;left:-36px;width:36px;bottom:-32px;border-right:none"></div>
+            <div class="space-mark" style="top:-32px;right:-36px;width:36px;bottom:-32px;border-left:none"></div>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:36px;font-weight:300;letter-spacing:14px;color:#1a1a1a">HANBIT</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== TYPOGRAPHY SYSTEM ===== -->
+<div class="section">
+    <div class="section-label">06 — Typography Pairing</div>
+    <div class="section-desc">로고: IBM Plex Mono Light. 본문: IBM Plex Sans Light. 같은 Plex 패밀리로 통일감.</div>
+
+    <div class="card" style="padding:40px">
+        <div style="margin-bottom:32px">
+            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:2px">LOGO FONT</span>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:36px;font-weight:300;letter-spacing:12px;color:#1a1a1a;margin-top:8px">HANBIT</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:300;color:var(--muted);margin-top:6px;letter-spacing:1px">IBM Plex Mono Light — AaBbCc 0123456789</div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:24px;margin-bottom:28px">
+            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:2px">HEADING FONT</span>
+            <div style="font-family:'IBM Plex Sans',sans-serif;font-size:28px;font-weight:500;color:#1a1a1a;margin-top:8px">The quick brown fox</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:300;color:var(--muted);margin-top:6px;letter-spacing:1px">IBM Plex Sans Medium</div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:24px">
+            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:2px">BODY FONT</span>
+            <div style="font-family:'IBM Plex Sans',sans-serif;font-size:15px;font-weight:300;color:#666;margin-top:8px;line-height:1.7;max-width:480px">한비트는 하나의 비트에서 시작합니다. 가장 작은 단위가 가장 큰 변화를 만든다고 믿습니다. One bit changes everything.</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:300;color:var(--muted);margin-top:6px;letter-spacing:1px">IBM Plex Sans Light</div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== BUSINESS CARD ===== -->
+<div class="section">
+    <div class="section-label">07 — Business Card Mockup</div>
+
+    <div class="bizcard-grid">
+        <div class="bizcard front">
+            <div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:300;letter-spacing:12px;color:white">HANBIT</span>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:8px;font-weight:300;letter-spacing:4px;color:#555">ONE BIT CHANGES EVERYTHING</div>
+        </div>
+        <div class="bizcard back">
+            <div>
+                <div class="biz-name" style="color:#1a1a1a;margin-bottom:4px">홍길동</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:300;color:var(--muted);letter-spacing:1px">Software Engineer</div>
+            </div>
+            <div class="biz-info" style="color:#999">
+                hello@hanbit.io<br>
+                +82 10 1234 5678<br>
+                hanbit.io
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== COLOR PALETTE ===== -->
+<div class="section">
+    <div class="section-label">08 — Brand Colors</div>
+
+    <div class="card" style="padding:32px;display:flex;gap:16px;flex-wrap:wrap">
+        <div style="text-align:center">
+            <div style="width:80px;height:80px;border-radius:16px;background:#1a1a1a;margin-bottom:8px"></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:1px">PRIMARY</div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">#1A1A1A</div>
+        </div>
+        <div style="text-align:center">
+            <div style="width:80px;height:80px;border-radius:16px;background:#c8b090;margin-bottom:8px"></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:1px">ACCENT</div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">#C8B090</div>
+        </div>
+        <div style="text-align:center">
+            <div style="width:80px;height:80px;border-radius:16px;background:#0d1b2a;margin-bottom:8px"></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:1px">NAVY</div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">#0D1B2A</div>
+        </div>
+        <div style="text-align:center">
+            <div style="width:80px;height:80px;border-radius:16px;background:#f5f3f0;border:1px solid var(--border);margin-bottom:8px"></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:1px">SURFACE</div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">#F5F3F0</div>
+        </div>
+        <div style="text-align:center">
+            <div style="width:80px;height:80px;border-radius:16px;background:white;border:1px solid var(--border);margin-bottom:8px"></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:1px">WHITE</div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">#FFFFFF</div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    HANBIT BRAND IDENTITY SYSTEM — IBM Plex Mono Light<br>
+    <span style="color:#aaa;margin-top:4px;display:inline-block">One bit changes everything.</span>
+</div>
+
+</body>
+</html>
