@@ -220,7 +220,7 @@
           "description": "10년 경력의 플랫폼 아키텍트이자 AI/ML 개발자로, 시스템 설계부터 머신러닝 모델 구축까지 기술 전 영역을 아우르는 리더입니다."
         },
         "leeSuJin": {
-          "name": "소재현",
+          "name": "박민호",
           "role": "AI/ML Engineer",
           "description": "데이터 사이언스와 머신러닝 전문가로, 비즈니스 인사이트를 제공합니다."
         },
@@ -230,7 +230,7 @@
           "description": "사용자 경험에 집중하는 프론트엔드 전문가입니다."
         },
         "jungHaYoung": {
-          "name": "조평식",
+          "name": "김범수",
           "role": "Backend Engineer",
           "description": "확장 가능한 백엔드 시스템 설계 전문가입니다."
         }
