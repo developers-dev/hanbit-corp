@@ -68,7 +68,7 @@ export default function Navigation({ transparent = false }: { transparent?: bool
             ))}
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-warm-800 hover:bg-warm-700 text-white px-5 py-2 rounded-md text-[13px] font-semibold transition-colors"
+              className="inline-flex items-center gap-2 bg-copper hover:bg-copper-light text-white px-5 py-2 rounded-md text-[13px] font-semibold transition-colors"
             >
               {t("contact")}
             </Link>
@@ -108,7 +108,7 @@ export default function Navigation({ transparent = false }: { transparent?: bool
               <div className="px-4 pt-3 flex gap-2">
                 <Link
                   href="/contact"
-                  className="flex-1 flex items-center justify-center bg-warm-800 hover:bg-warm-700 text-white py-2.5 rounded-md text-[13px] font-semibold transition-colors"
+                  className="flex-1 flex items-center justify-center bg-copper hover:bg-copper-light text-white py-2.5 rounded-md text-[13px] font-semibold transition-colors"
                 >
                   {t("contact")}
                 </Link>

@@ -4,29 +4,28 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Monochrome — HANBIT Black Identity */
-  --color-navy: #1A1A1A;
-  --color-navy-light: #333;
-  --color-navy-dark: #0D0D0D;
+  /* Brand — HANBIT BI */
+  --color-navy: #0D1B2A;
+  --color-navy-light: #1B2D42;
+  --color-navy-dark: #060E17;
 
-  /* Accent = same black (monochrome, no color accent) */
-  --color-copper: #1A1A1A;
-  --color-copper-light: #333;
-  --color-copper-bg: #F7F7F7;
+  --color-copper: #C8B090;
+  --color-copper-light: #D4C0A0;
+  --color-copper-bg: #F5F0E8;
 
-  /* 5-step gray scale */
+  /* Neutral Scale */
   --color-warm-50: #FFFFFF;
-  --color-warm-100: #F7F7F7;
-  --color-warm-200: #E8E8E8;
-  --color-warm-300: #D0D0D0;
-  --color-warm-400: #AAAAAA;
-  --color-warm-500: #999999;
-  --color-warm-600: #666666;
-  --color-warm-700: #555555;
+  --color-warm-100: #F5F3F0;
+  --color-warm-200: #E6E2DC;
+  --color-warm-300: #D5D0C8;
+  --color-warm-400: #B0A898;
+  --color-warm-500: #999;
+  --color-warm-600: #666;
+  --color-warm-700: #444;
   --color-warm-800: #1A1A1A;
   --color-warm-900: #0D0D0D;
 
-  --color-warm-border: #E8E8E8;
+  --color-warm-border: #E6E2DC;
 
   /* Fonts */
   --font-sans: var(--font-sans-kr), 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -36,8 +35,8 @@
 
 @layer base {
   ::selection {
-    background-color: #1A1A1A;
-    color: #FFFFFF;
+    background-color: var(--color-copper);
+    color: var(--color-warm-800);
   }
 
   body {
@@ -48,7 +47,7 @@
 
   h1, h2, h3 {
     font-family: var(--font-sans);
-    color: #1A1A1A;
+    color: var(--color-warm-800);
     letter-spacing: -0.02em;
     line-height: 1.3;
   }
