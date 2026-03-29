@@ -23,6 +23,9 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "HANBIT — One Bit Changes Everything",
   description: "Enterprise IT Solutions. AI, Cloud, Web Platform. One bit changes everything.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 }
 
 export default function RootLayout({
