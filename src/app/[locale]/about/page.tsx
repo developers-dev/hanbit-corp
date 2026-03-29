@@ -11,7 +11,7 @@ export default function AboutPage() {
 
   const memberKeys = ["kimTaeHyun", "leeSuJin", "parkMinSu", "jungHaYoung"] as const
   const memberSkills: Record<string, string[]> = {
-    kimTaeHyun: ["React", "Node.js", "System Architecture"],
+    kimTaeHyun: ["Kubernetes", "Kafka", "Airflow", "TensorFlow", "PyTorch", "Redis", "Spring Boot"],
     leeSuJin: ["Python", "TensorFlow", "Data Analysis"],
     parkMinSu: ["React", "TypeScript", "UI/UX"],
     jungHaYoung: ["Node.js", "Database", "Cloud"],
