@@ -6,11 +6,16 @@ import { demoProjects } from "@/lib/demo-data"
 import Link from "next/link"
 
 export default function LLMChatbotDemo() {
+  const getTime = () => {
+    if (typeof window === "undefined") return ""
+    return new Date().toLocaleTimeString()
+  }
+
   const [messages, setMessages] = useState([
     {
       role: "assistant",
       content: "안녕하세요! HANBIT 사내 챗봇입니다. 궁금한 것이 있으시면 언제든 물어보세요.",
-      timestamp: new Date().toLocaleTimeString(),
+      timestamp: "",
     },
   ])
   const [inputValue, setInputValue] = useState("")
@@ -26,6 +31,12 @@ export default function LLMChatbotDemo() {
   useEffect(() => {
     scrollToBottom()
   }, [messages])
+
+  useEffect(() => {
+    setMessages((prev) =>
+      prev.map((msg, i) => (i === 0 && !msg.timestamp ? { ...msg, timestamp: getTime() } : msg))
+    )
+  }, [])
 
   const predefinedResponses = {
     휴가: "휴가 신청은 다음과 같이 진행하시면 됩니다:\n\n1. 인사시스템에 로그인\n2. '휴가신청' 메뉴 선택\n3. 휴가 종류, 기간, 사유 입력\n4. 직속상관 승인 요청\n\n연차는 최소 3일 전에 신청해주세요.",
@@ -43,7 +54,7 @@ export default function LLMChatbotDemo() {
     const userMessage = {
       role: "user",
       content: inputValue,
-      timestamp: new Date().toLocaleTimeString(),
+      timestamp: getTime(),
     }
 
     setMessages((prev) => [...prev, userMessage])
@@ -60,7 +71,7 @@ export default function LLMChatbotDemo() {
       const assistantMessage = {
         role: "assistant",
         content: response,
-        timestamp: new Date().toLocaleTimeString(),
+        timestamp: getTime(),
       }
 
       setMessages((prev) => [...prev, assistantMessage])
