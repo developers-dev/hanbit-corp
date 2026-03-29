@@ -9,12 +9,13 @@ import { Link } from "@/i18n/navigation"
 export default function ServicesPage() {
   const t = useTranslations("Services")
 
-  const serviceKeys = ["aiData", "webDev", "systemArch", "customPlatforms"] as const
+  const serviceKeys = ["aiData", "webDev", "systemArch", "customPlatforms", "managed"] as const
   const serviceTechnologies: Record<string, string[]> = {
     aiData: ["Python", "TensorFlow", "PyTorch", "Pandas", "Apache Spark", "MLflow"],
     webDev: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Redis"],
     systemArch: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"],
     customPlatforms: ["React Native", "Flutter", "GraphQL", "Microservices", "REST API", "WebSocket"],
+    managed: ["Linux", "Nginx", "Apache", "DNS", "SSL/TLS", "CDN"],
   }
 
   const processSteps = ["01", "02", "03", "04"] as const
