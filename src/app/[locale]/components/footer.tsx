@@ -58,7 +58,10 @@ export default function Footer() {
         <div className="py-6 border-t border-white/10 text-xs text-warm-600 space-y-1">
           <div>{t("corpInfo")}</div>
           <div>{t("corpInfo2")}</div>
-          <div>&copy; {new Date().getFullYear()} {t("copyright")}</div>
+          <div className="flex items-center justify-between">
+            <span>&copy; {new Date().getFullYear()} {t("copyright")}</span>
+            <Link href="/brand" className="text-warm-700 hover:text-warm-500 transition-colors">Brand Guidelines</Link>
+          </div>
         </div>
       </div>
     </footer>
